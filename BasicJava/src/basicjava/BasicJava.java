@@ -34,16 +34,39 @@ public class BasicJava extends java.applet.Applet {
         System.out.println("-------------------------");
         //İlkel tipler (Primative tips)
 
-        int int_sayi = 33;
-        double double_sayi = 22.5;
-        float float_sayi = 11.1f;
-        boolean bool = false;
-        String string = "Numan";
+        int myInt = 123;
+        short myShort = 1234;
+        long myLong = 123456789;
+        double myDouble = 13.98;
+        boolean myBool = true;
+        char myChar = 'G';
+        float myFloat = 1234.000f;
+        float myFloat1 = (float) 1234.0000;
+        byte myByte = 123;
 
-        System.out.println("İnt sayi: " + int_sayi);
-        System.out.println("double sayi: " + double_sayi);
-        System.out.println("boolean: " + bool);
-        System.out.println("String: " + string);
+        System.out.println(myInt);
+        System.out.println(myShort);
+        System.out.println(myLong);
+        System.out.println(myDouble);
+        System.out.println(myBool);
+        System.out.println(myChar);
+        System.out.println(myByte);
+        System.out.println(myFloat);
+        System.out.println(myFloat1);
+
+        System.out.println("-------------------------");
+        //Stirng sınıfları
+
+        String s = "Selam";
+        String b = " ";
+        String m = "Mert";
+        String t = s + b + m;
+
+        System.out.println(s);
+        System.out.println(b);
+        System.out.println(m);
+        System.out.println(t);
+        System.out.println("Selam" + " "+ "Mert");
 
         //İlişkisel operatörler
         System.out.println("-------------------------");
@@ -53,5 +76,14 @@ public class BasicJava extends java.applet.Applet {
         System.out.println(number1 <= number3);//truw
         System.out.println(number1 == number4);//false
 
+        //Dönüştürme işlemleri
+        double longNumber = 0;
+        int shortNumber = (int) longNumber; // Dikkat
+
+        /*
+        int shortNumber = 0;
+        double longNumber=(double)shortNumber;
+         */
     }
+
 }
