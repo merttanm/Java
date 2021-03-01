@@ -66,7 +66,7 @@ public class BasicJava extends java.applet.Applet {
         System.out.println(b);
         System.out.println(m);
         System.out.println(t);
-        System.out.println("Selam" + " "+ "Mert");
+        System.out.println("Selam" + " " + "Mert");
 
         //İlişkisel operatörler
         System.out.println("-------------------------");
@@ -84,6 +84,12 @@ public class BasicJava extends java.applet.Applet {
         int shortNumber = 0;
         double longNumber=(double)shortNumber;
          */
+        Hello nesne = new Hello();
+        String cevap = nesne.selamSoyle("Ali");
+        System.out.println(cevap);
+        
+        
+        
     }
 
 }
