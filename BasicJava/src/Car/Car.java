@@ -9,11 +9,42 @@ package Car;
  *
  * @author MERT
  */
-public class Car {
+ class Car {
+
     public String marka;
     public String model;
     public String renk;
     public String tipi;
+    public int km;
+    public int hız;
+    public int sıfırla;
+
+    public double go(int newKm) {
+        km += newKm;
+        double periyot = (double) newKm / hız;
+        return periyot;
+    }
+
+    public double sıfırla(int newSıfırla) {
+        km = 0;
+        return km;
+    }
+
+    public int getKm() {
+        return km;
+    }
+
+    public void setKm(int km) {
+        this.km = km;
+    }
+
+    public int getHız() {
+        return hız;
+    }
+
+    public void setHız(int hız) {
+        this.hız = hız;
+    }
 
     public String getMarka() {
         return marka;
@@ -46,7 +77,5 @@ public class Car {
     public void setTipi(String tipi) {
         this.tipi = tipi;
     }
-    
-   
-    
+
 }
