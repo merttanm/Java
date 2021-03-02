@@ -9,7 +9,7 @@ package Car;
  *
  * @author MERT
  */
- class Car {
+public class Car {
 
     public String marka;
     public String model;

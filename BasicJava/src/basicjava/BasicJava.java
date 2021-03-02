@@ -93,6 +93,10 @@ public class BasicJava extends java.applet.Applet {
         
         Nesne oluşturulunca bellekte nesneye yer ayırmış ve bu
         yerin adresi, nesnenin referansına atanmış demektir.
+        
+        Bir dosya uzantısında birden fazla class olabilir, 
+        en fazla 1 tane public class olabilir ve minimum 0 
+        tane public class olabilir
         */
         
         
