@@ -88,6 +88,13 @@ public class BasicJava extends java.applet.Applet {
         String cevap = nesne.selamSoyle("Ali");
         System.out.println(cevap);
         
+        /*
+        Sabit ifadelerin değerleri run-time zamanında belirlenir!!
+        
+        Nesne oluşturulunca bellekte nesneye yer ayırmış ve bu
+        yerin adresi, nesnenin referansına atanmış demektir.
+        */
+        
         
         
     }
