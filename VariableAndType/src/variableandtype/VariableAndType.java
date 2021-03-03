@@ -17,12 +17,37 @@ public class VariableAndType {
     public static void main(String[] args) {
 
         //İlkel veri tipleri
+        int sayi1 = 23;
         boolean flag = false;
         boolean creat = true;
-
         char firstLetter = 'a'; // Negatif almazz!!
         char c;
+        float a = 0.1f;
+        double d = 1 * a;        
+        System.out.println("d:" + d);
 
+        //Altçizgili gözerim
+        int aInt=10_000_000;
+        System.out.println(aInt)
+                ;
+        int anotherInt=10_00_00;
+        System.out.println(anotherInt);
+
+        int otherInt1=10_0_0__0_0;
+        System.out.println(otherInt1);
+        
+        int otherInt2=1______0;
+        System.out.println(otherInt2);
+        
+        int otherInt3=0______0;
+        System.out.println(otherInt3);
+        
+        Long aLong=2_143_234_895L;
+        System.out.println(aLong);
+        
+        
+        
+        
         //Escapes (Kaçış karakterleri)
         System.out.println("Naber\nBebeğim");
         System.out.println("Selam\tYavrum");
