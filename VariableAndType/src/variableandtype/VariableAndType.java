@@ -97,24 +97,44 @@ public class VariableAndType {
         System.out.println("Pelkas\f\fAlex");
         System.out.println("Erzinca\nlı");
         System.out.println("ÖlürümTürkğ\\iyem");
-
-        System.out.println("-----------------------var tipi---------------------------------");
         /*
+        System.out.println("-----------------------var tipi---------------------------------");
+        
          int j=6;
          System.out.println("j: "+j);
          byte b=45;
          var jjj=b/4.0;
          System.out.println("jjj:" +jjj);
          */
-        
-         System.out.println("-----------------------Tür Dönüşümleri---------------------------------");
-         
-         
-         
-        
-        
-        
-        
+
+        System.out.println("-----------------------Tür Dönüşümleri---------------------------------");
+
+        byte byteNumber = 0;
+        short shortNumber = 3;
+        char chatNumber = 'a';
+        int intNumber = 3_1;
+        long l = 123_123_123l;
+        float floatNumber = 456.34_534_3f;
+        double doubleNumber = 12.23_423_5234;
+
+        short shortNumber2 = byteNumber;
+        System.out.println("shortNumber2= " + shortNumber2);
+
+        byte byteNumber2 = (byte) shortNumber; // --------------------- Sayı büyürse sonuç saçmalar
+        System.out.println("byteNumber2= " + byteNumber2);
+
+        float floatNumber2 = intNumber;
+        System.out.println("floatNumber2= " + floatNumber2);
+
+        int intNumber2 = (int) floatNumber; // --------------------- virgülden sonra veri kaybı olur
+        System.out.println("intNumber2= " + intNumber2);
+
+        int intNumber3 = (int) 1.245675675789789f;
+        System.out.println("intNumber3= " + intNumber3);
+
+        byte bytNumber3 = (byte) 12.12;
+        System.out.println("bytNumber3= " + bytNumber3);
+
     }
 
 }
