@@ -106,6 +106,15 @@ public class VariableAndType {
          var jjj=b/4.0;
          System.out.println("jjj:" +jjj);
          */
+        
+         System.out.println("-----------------------Tür Dönüşümleri---------------------------------");
+         
+         
+         
+        
+        
+        
+        
     }
 
 }
