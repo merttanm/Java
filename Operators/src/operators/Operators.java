@@ -50,6 +50,20 @@ public class Operators {
         double d7=(double)d6/s6;
         System.out.println(d7);
         
+        System.out.println(-i++); //-5
+        System.out.println(-i);   //-6
+        System.out.println(i--);  //6
+        System.out.println(i);   //5
+        System.out.println(++i); //6
+        System.out.println(i);   //6
+        System.out.println(i++); // 6
+  //    System.out.println(i+++); //----Hata
+  //    System.out.println(i---); //----Hata
+  //    System.out.println(i-+); //----Hata
+  //    System.out.println(i+-); //----Hata
+  
+        System.out.println(+-i); //-7
+        System.out.println(--i);  //6
         
 
     }
