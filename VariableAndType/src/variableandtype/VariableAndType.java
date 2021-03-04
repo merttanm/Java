@@ -5,6 +5,8 @@
  */
 package variableandtype;
 
+import References.UserModel;
+
 /**
  *
  * @author MERT
@@ -134,6 +136,25 @@ public class VariableAndType {
 
         byte bytNumber3 = (byte) 12.12;
         System.out.println("bytNumber3= " + bytNumber3);
+
+        System.out.println("-----------------------final veriable---------------------------------");
+
+        final int i = 89;
+        //i = 45;    //-------hata 
+        int num1 = 3;
+        int num2 = 5;
+        final int num3;  // final değişkene tek bir kere değer atanıyor sonra değeri değiştirilemiyor.
+
+        if (num1 > num2) {
+            num3 = 6;
+        } else {
+            num3 = 9;
+        }
+        final UserModel m1 = new UserModel();
+        //  m1=new UserModel(); // -------Hata 
+
+        final UserModel m2;
+        m2 = new UserModel();
 
     }
 
