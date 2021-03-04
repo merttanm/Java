@@ -19,6 +19,9 @@ public class VariableAndType {
         //--------------------------------- İlkel veri tipleri--------------------------------- 
         System.out.println("----------------------- İlkel veri tipleri---------------------------------");
         int sayi1 = 23;
+        int sayi2 = sayi1;
+        sayi1 = 45;
+        System.out.println("sayi 1= " + sayi1 + " sayi 2= " + sayi2);
         boolean flag = false;
         boolean creat = true;
         char firstLetter = 'a'; // Negatif almazz!!
@@ -70,21 +73,20 @@ public class VariableAndType {
 
         char ch = 't';
         System.out.println("Karakter: " + ch + "  Karaktere karşılık gelen sayı  " + (int) ch);
-        ch='T';
+        ch = 'T';
         System.out.println("Karakter: " + ch + "  Karaktere karşılık gelen sayı  " + (int) ch);
-        ch=9;
+        ch = 9;
         System.out.println("Karakter: " + ch + "  Karaktere karşılık gelen sayı  " + (int) ch);
-        ch=' ';
+        ch = ' ';
         System.out.println("Karakter: " + ch + "  Karaktere karşılık gelen sayı  " + (int) ch);
-        ch='$';
+        ch = '$';
         System.out.println("Karakter: " + ch + "  Karaktere karşılık gelen sayı  " + (int) ch);
-        ch='+';
+        ch = '+';
         System.out.println("Karakter: " + ch + "  Karaktere karşılık gelen sayı  " + (int) ch);
-        ch=(char) -6;
+        ch = (char) -6;
         System.out.println("Karakter: " + ch + "  Karaktere karşılık gelen sayı  " + (int) ch);
-        ch=(char) -45657;
+        ch = (char) -45657;
         System.out.println("Karakter: " + ch + "  Karaktere karşılık gelen sayı  " + (int) ch);
-        
 
         //--------------------------------- Escapes (Kaçış karakterleri)--------------------------------- 
         System.out.println("-----------------------Escapes (Kaçış karakterleri)---------------------------------");
@@ -96,6 +98,14 @@ public class VariableAndType {
         System.out.println("Erzinca\nlı");
         System.out.println("ÖlürümTürkğ\\iyem");
 
+        System.out.println("-----------------------var tipi---------------------------------");
+        /*
+         int j=6;
+         System.out.println("j: "+j);
+         byte b=45;
+         var jjj=b/4.0;
+         System.out.println("jjj:" +jjj);
+         */
     }
 
 }
