@@ -14,9 +14,11 @@ public class UserModel {
     public String adi;
     public String soyadi;
     public Integer no;
+    public String adres;
+    public String cinsiyet;
 
     public String bilgileri(){
-    String bilgileri="Adi:"+adi+ "   " +"Soyadı:" + soyadi+ "   "+ "No:" + no;
+    String bilgileri="Adi:"+adi+ "   " +"Soyadı:" + soyadi+ "   "+ "No:" + no +"  "+"Adres:"+adres+"  "+"Cinsiyet:"+cinsiyet;
     return bilgileri;
     }
     

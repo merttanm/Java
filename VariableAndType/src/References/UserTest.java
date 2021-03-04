@@ -17,12 +17,16 @@ public class UserTest {
         user1.adi="Pelin";
         user1.soyadi="Demir";
         user1.no=12;
+        user1.adres="İstanbul";
+        user1.cinsiyet="Kadın";
         System.out.println(user1.bilgileri() );
         
         UserModel user2= new UserModel();
         user2.adi="Aylin";
         user2.soyadi="Gül";
         user2.no=13;
+        user2.adres="İstanbul";
+        user2.cinsiyet="Kadın";
         System.out.println(user2.bilgileri() );
         
         System.out.println("---------------------------");
