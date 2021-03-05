@@ -95,10 +95,11 @@ public class Operators {
          Random rand= new Random();
         int number1=rand.nextInt() %10;
         int number2=rand.nextInt() %10;
-        opr.cagır(number1, number2, 's', 'ı', true, false, "Fatih Sultan Mehmet", "t Sultan Mehmet");
+        opr.operatorCagır(number1, number2, 's', 'ı', true, false, "Fatih Sultan Mehmet", "Fatih Sultan Mehmet");
         
         
-        
+        ConditionalOperators copr = new ConditionalOperators();
+        copr.operatorCagır2(true, false);
         
        
 

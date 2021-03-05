@@ -15,7 +15,7 @@ public class RelationalOperators {
     
     
     
-    public void cagır(int number1, int number2, char char1, char char2,boolean bool1, boolean bool2 ,String string1, String string2){
+    public void operatorCagır(int number1, int number2, char char1, char char2,boolean bool1, boolean bool2 ,String string1, String string2){
  
         System.out.println("number1: "+number1);
         System.out.println("number2: "+number2);
