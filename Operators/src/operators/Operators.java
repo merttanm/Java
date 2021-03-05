@@ -17,6 +17,7 @@ public class Operators {
     public static void main(String[] args) {
         // TODO code application logic here
         int i = 5;
+        
         int k = 2;
         System.out.println(i / k); //-----------Yanlış sonuç---------------------
 
@@ -61,10 +62,38 @@ public class Operators {
   //    System.out.println(i---); //----Hata
   //    System.out.println(i-+); //----Hata
   //    System.out.println(i+-); //----Hata
-  
-        System.out.println(+-i); //-7
+        System.out.println("i:"+i);
+        System.out.println(+9-+-i); //16
         System.out.println(--i);  //6
         
+        int j=++i;  
+        System.out.println("j:"+j); //7
+        j=i++;
+        System.out.println("j:"+j); //7
+        j=--i;
+        System.out.println("j:"+j); //7
+        j=i--;
+        System.out.println("j:"+j); //7
+        
+        int t=0;
+        System.out.println("ok");
+        t=++t;
+        System.out.println("t:"+t);
+        t=++t +2;
+        System.out.println("t:"+t);
+        t=0;
+        System.out.println("not ok");
+        t=t++;
+        System.out.println("t:"+t); // kendisine atayıp ++ durumunda değeri değişmiyor ters köşe
+        t=t++ +2;
+        System.out.println("t:"+t); // kendisine atayıp ++ durumunda değeri değişmiyor ters köşe
+        
+        
+        
+        
+        
+        
+       
 
     }
 
