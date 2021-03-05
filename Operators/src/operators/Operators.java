@@ -5,6 +5,8 @@
  */
 package operators;
 
+import java.util.Random;
+
 /**
  *
  * @author MERT
@@ -87,8 +89,13 @@ public class Operators {
         System.out.println("t:"+t); // kendisine atayıp ++ durumunda değeri değişmiyor ters köşe
         t=t++ +2;
         System.out.println("t:"+t); // kendisine atayıp ++ durumunda değeri değişmiyor ters köşe
+        System.out.println("ok");
         
-        
+        RelationalOperators opr= new RelationalOperators();
+         Random rand= new Random();
+        int number1=rand.nextInt() %10;
+        int number2=rand.nextInt() %10;
+        opr.cagır(number1, number2, 's', 'ı', true, false, "Fatih Sultan Mehmet", "t Sultan Mehmet");
         
         
         
