@@ -101,6 +101,9 @@ public class Operators {
         ConditionalOperators copr = new ConditionalOperators();
         copr.operatorCagır2(true, false);
         
+        TernaryOperator trn= new TernaryOperator();
+        trn.trncagır();
+        
        
 
     }
