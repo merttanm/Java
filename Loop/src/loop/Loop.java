@@ -171,13 +171,21 @@ public class Loop {
                 if (arrayOfInts[k][l] == searchfor) {
                     fould = true;
                     System.out.println("Found" + searchfor + "at" + k + "," + l);
-                    //break here;
+                    //break here; // Kırarsam aramaya devam etmiyor ama döngünün devamında yine 12 var
+                    continue here;               
                 }
 
             }
         }
         if (!fould) {
             System.out.println(searchfor + " not here");
+        }
+        
+        
+        
+        while(true){
+            System.out.println("selam");
+        int r=5;
         }
     }
 
