@@ -6,6 +6,7 @@
 package loop;
 
 import java.util.Random;
+import java.util.Scanner;
 
 /**
  *
@@ -29,16 +30,16 @@ public class Loop {
         System.out.println("After while");
 
         System.out.println("--------------- Do - While ---------------");
-        
+
         double dw;
-        do{
-            dw=Math.random();
-            System.out.println("dw: "+dw);
-        }while(dw < 0.2);
+        do {
+            dw = Math.random();
+            System.out.println("dw: " + dw);
+        } while (dw < 0.2);
         {
             System.out.println("dw < 0.2 ,End looop");
         }
-        
+
         System.out.println("---------------If - Else---------------");
         int number2 = (int) (5 * Math.random());
         int number3 = (int) (5 * Math.random());
@@ -59,47 +60,39 @@ public class Loop {
             System.out.println("");
         }
         System.out.println("\n\n\n");
-        
-        int col=5;
-        int row=5;
-         for (int i = 0; i < row; i++) {
-             if(i==1){
-                 for (int j = 0; j < 4; j++) {
-                     System.out.println("*   *");                    
-                 }                   
-                 System.out.println("*****");
-                 break;
-             }             
+
+        int col = 5;
+        int row = 5;
+        for (int i = 0; i < row; i++) {
+            if (i == 1) {
+                for (int j = 0; j < 4; j++) {
+                    System.out.println("*   *");
+                }
+                System.out.println("*****");
+                break;
+            }
             for (int j = 0; j < 5; j++) {
-                
+
                 System.out.print("*");
-                
-                if(j==col-1){
-                    System.out.println("");}
+
+                if (j == col - 1) {
+                    System.out.println("");
+                }
 
             }
-            
+
         }
-         
-         System.out.println("\n\n\n");
-         for (int i = 0; i < row; i++) {
-             for (int j = 0; j < col; j++) {
-                 System.out.print("*");
-             }
-             
-        }
-         
-         
-         
-         
-         
-         
+
         System.out.println("\n\n\n");
-        
-        
-        
-        
-        
+        for (int i = 0; i < row; i++) {
+
+            for (int j = 0; j < col; j++) {
+                System.out.print("*");
+            }
+
+        }
+
+        System.out.println("\n\n\n");
 
         for (int i = 0; i <= 5; i++) {
             for (int j = 0; j <= i; j++) {
@@ -110,22 +103,59 @@ public class Loop {
         }
 
         for (int k = 5; k >= 0; k--) {
-            
-            for (int l =0; l < k ; l++) {
-              
+
+            for (int l = 0; l < k; l++) {
+
                 System.out.print("-");
-               
+
             }
             System.out.println("");
         }
-         
 
-        
        
-        
-        
-        
-        
+        int month = 3;
+
+        switch (month) {
+            case 1:
+                System.out.println("Ocak");
+                break;
+            case 2:
+                System.out.println("Şubat");
+                break;
+            case 3:
+                System.out.println("Mart");
+                break;
+            case 4:
+                System.out.println("Nisan");
+                break;
+            case 5:
+                System.out.println("Mayıs");
+                break;
+            case 6:
+                System.out.println("Haziran");
+                break;
+            case 7:
+                System.out.println("Temmuz");
+                break;
+            case 8:
+                System.out.println("Ağostos");
+                break;
+            case 9:
+                System.out.println("Eylül");
+                break;
+            case 10:
+                System.out.println("Ekim");
+                break;
+            case 11:
+                System.out.println("Kasım");
+                break;
+            case 12:
+                System.out.println("Aralık");
+                break;
+                default: System.out.println("Error! Please enter the month number between 1 and 12"); break;
+
+        }
+
     }
 
 }
