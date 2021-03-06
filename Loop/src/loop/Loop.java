@@ -112,7 +112,6 @@ public class Loop {
             System.out.println("");
         }
 
-       
         int month = 3;
 
         switch (month) {
@@ -152,10 +151,34 @@ public class Loop {
             case 12:
                 System.out.println("Aralık");
                 break;
-                default: System.out.println("Error! Please enter the month number between 1 and 12"); break;
+            default:
+                System.out.println("Error! Please enter the month number between 1 and 12");
+                break;
 
         }
 
+        int[][] arrayOfInts = {{21, 23, 5, 123}, {12, 24, 500, 12}, {12, 98, 54, 786}};
+
+        int searchfor = 12;
+
+        int k = 0;
+        int l = 0;
+        boolean fould = false;
+
+       
+      here: for (; k < arrayOfInts.length; k++) {
+            for (l=0; l < arrayOfInts[k].length; l++) {
+                if (arrayOfInts[k][l] == searchfor) {
+                    fould = true;
+                    System.out.println("Found" + searchfor + "at" + k + "," + l);
+                    //break here;
+                }
+
+            }
+        }
+        if (!fould) {
+            System.out.println(searchfor + " not here");
+        }
     }
 
 }
