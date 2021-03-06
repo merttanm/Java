@@ -28,10 +28,21 @@ public class Loop {
         }
         System.out.println("After while");
 
+        System.out.println("--------------- Do - While ---------------");
+        
+        double dw;
+        do{
+            dw=Math.random();
+            System.out.println("dw: "+dw);
+        }while(dw < 0.2);
+        {
+            System.out.println("dw < 0.2 ,End looop");
+        }
+        
+        System.out.println("---------------If - Else---------------");
         int number2 = (int) (5 * Math.random());
         int number3 = (int) (5 * Math.random());
 
-        System.out.println("---------------If - Else---------------");
         if (number2 > number3) {
             System.out.println("number2 > number3");
         } else {
@@ -47,25 +58,74 @@ public class Loop {
             }
             System.out.println("");
         }
+        System.out.println("\n\n\n");
+        
+        int col=5;
+        int row=5;
+         for (int i = 0; i < row; i++) {
+             if(i==1){
+                 for (int j = 0; j < 4; j++) {
+                     System.out.println("*   *");                    
+                 }                   
+                 System.out.println("*****");
+                 break;
+             }             
+            for (int j = 0; j < 5; j++) {
+                
+                System.out.print("*");
+                
+                if(j==col-1){
+                    System.out.println("");}
 
-        for (int i = 0; i < 5; i++) {
+            }
+            
+        }
+         
+         System.out.println("\n\n\n");
+         for (int i = 0; i < row; i++) {
+             for (int j = 0; j < col; j++) {
+                 System.out.print("*");
+             }
+             
+        }
+         
+         
+         
+         
+         
+         
+        System.out.println("\n\n\n");
+        
+        
+        
+        
+        
+
+        for (int i = 0; i <= 5; i++) {
             for (int j = 0; j <= i; j++) {
                 System.out.print("-");
             }
             System.out.println("");
 
         }
-        /*
-        for (int k = 0; k < 5; k--) {
-            for (int l = 5; l >= 0; l--) {
+
+        for (int k = 5; k >= 0; k--) {
+            
+            for (int l =0; l < k ; l++) {
+              
                 System.out.print("-");
-                 
+               
             }
-           
             System.out.println("");
         }
-         */
+         
 
+        
+       
+        
+        
+        
+        
     }
 
 }
