@@ -55,50 +55,74 @@ public class _C {
 
         }
 
-        while (asalSayi % 2 != 0 && asalSayi % 3 != 0 && asalSayi % 5 != 0 ) {
-               System.out.println(asalSayi + " asal bir sayıdır");
-               break;
+        while (asalSayi % 2 != 0 && asalSayi % 3 != 0 && asalSayi % 5 != 0) {
+            System.out.println(asalSayi + " asal bir sayıdır");
+            break;
         }
-        
-        
-        int faktoriyel=7;
-        int sayac=1;
-        
-        for (int i = 1; i <=faktoriyel ; i++) {
-            sayac *= i;
-            System.out.println( i+" Faktoriyel "+ sayac);
-        }
-             
 
-        int loops=8;
+        int faktoriyel = 7;
+        int sayac = 1;
+
+        for (int i = 1; i <= faktoriyel; i++) {
+            sayac *= i;
+            System.out.println(i + " Faktoriyel " + sayac);
+        }
+
+        int loops = 8;
         for (int i = 1; i <= loops; i++) {
-            for (int j = 1; j <i ; j++) {
+            for (int j = 1; j < i; j++) {
                 System.out.print(j);
             }
             System.out.println("");
         }
-        
+
         for (int k = loops; k >= 1; k--) {
             for (int l = 1; l < k; l++) {
                 System.out.print(k);
             }
             System.out.println("");
         }
-           System.out.println("\n\n\n");
-           
-           
+        System.out.println("\n");
+
         for (int u = loops; u > 0; u--) {
             for (int y = u; y >= 0; y--) {
-                System.out.print(y +" ");
-                
+                System.out.print(y + " ");
+
             }
             System.out.println("");
-    
-        }
-              System.out.println("\n\n\n");
 
+        }
+        System.out.println("\n");
+
+        int loops2=20;
+        for (int p = 0; p <= loops2; p++) {
+            for (int w = 0; w <= p; w++) {
+                System.out.print(w+" ");
+            }
+            System.out.println("");
+        }
+        System.out.println("\n");
+        for (int i = 0; i < loops2; i++) {
+            for (int j = loops2; j > i; j--) {
+                System.out.print(j+" ");
+            }
+            System.out.println("");
+        }
         
-    
+          System.out.println("\n");
+          
+         for (int i = 0; i < loops2; i++) {
+             loops2--;
+            for (int j = 0; j < loops2; j++) {
+                System.out.print(j+" ");
+                 
+            }
+            
+            System.out.println("");
+        }
+        
+        
+        
     }
 
 }
