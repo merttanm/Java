@@ -165,14 +165,14 @@ public class Loop {
         int l = 0;
         boolean fould = false;
 
-       
-      here: for (; k < arrayOfInts.length; k++) {
-            for (l=0; l < arrayOfInts[k].length; l++) {
+        here:
+        for (; k < arrayOfInts.length; k++) {
+            for (l = 0; l < arrayOfInts[k].length; l++) {
                 if (arrayOfInts[k][l] == searchfor) {
                     fould = true;
                     System.out.println("Found" + searchfor + "at" + k + "," + l);
                     //break here; // Kırarsam aramaya devam etmiyor ama döngünün devamında yine 12 var
-                    continue here;               
+                    continue here;
                 }
 
             }
@@ -180,13 +180,14 @@ public class Loop {
         if (!fould) {
             System.out.println(searchfor + " not here");
         }
+
         
-        
-        
-        while(true){
+        /*
+        while(false){
             System.out.println("selam");
         int r=5;
         }
+         */
     }
 
 }
