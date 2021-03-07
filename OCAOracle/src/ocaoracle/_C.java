@@ -39,7 +39,7 @@ public class _C {
         }
         System.out.println("\n");
 
-        int asalSayi = 13;
+        int asalSayi = 14;
         boolean asalmi = true;
 
         for (int i = 2; i < asalSayi; i++) {
@@ -54,60 +54,51 @@ public class _C {
             break;
 
         }
-/*
-        for (int i = 2; i < asalSayi; i++) {
-            if (i % 2 != 0 && i % 3 != 0 && i % 5 != 0 && i % 7 != 0) {
-                System.out.println(asalSayi + " asal bir sayıdır");
-                break;
 
-            }
-
-        }
-*/
         while (asalSayi % 2 != 0 && asalSayi % 3 != 0 && asalSayi % 5 != 0 ) {
                System.out.println(asalSayi + " asal bir sayıdır");
                break;
         }
+        
+        
+        int faktoriyel=7;
+        int sayac=1;
+        
+        for (int i = 1; i <=faktoriyel ; i++) {
+            sayac *= i;
+            System.out.println( i+" Faktoriyel "+ sayac);
+        }
              
 
-     
-  
-
-
-        /*
-    if(girilenSayi !=0){
-        ata = girilenSayi%10;
-        System.out.println("tersi: "+ ata);
-        girilenSayi=girilenSayi-ata;
-        
-        if(girilenSayi !=0){
-            ata=ata*10;
-            ata=ata + ( girilenSayi%10);
-            System.out.println("tersi: "+ata);
-             girilenSayi=girilenSayi-ata;
+        int loops=8;
+        for (int i = 1; i <= loops; i++) {
+            for (int j = 1; j <i ; j++) {
+                System.out.print(j);
+            }
+            System.out.println("");
         }
-    }
-    
-    
-    
-    
-    
-    String metin="ASDASD";
-        for (int i = 0; i < metin.length(); i++) {
+        
+        for (int k = loops; k >= 1; k--) {
+            for (int l = 1; l < k; l++) {
+                System.out.print(k);
+            }
+            System.out.println("");
+        }
+           System.out.println("\n\n\n");
            
-            
-        }
+           
+        for (int u = loops; u > 0; u--) {
+            for (int y = u; y >= 0; y--) {
+                System.out.print(y +" ");
+                
+            }
+            System.out.println("");
     
-        int asalSayi=400;
-        
-        for (int i = 0; i <asalSayi ; i++) {
-          
-            
-            
-            System.out.println("sayilar: "+i);
-            
         }
-         */
+              System.out.println("\n\n\n");
+
+        
+    
     }
 
 }
