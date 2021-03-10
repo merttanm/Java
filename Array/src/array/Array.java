@@ -5,6 +5,7 @@
  */
 package array;
 
+import static java.lang.Math.random;
 import java.lang.annotation.ElementType;
 import java.util.Random;
 
@@ -26,19 +27,32 @@ public class Array {
     public static void main(String[] args) {
         // TODO code application logic here
 
-        
         doldur();
         print();
-        /*for (int i = 0; i < dArray.length; i++) {
 
-            int dArray4 = random.nextInt();
-            int sayi = dArray4 % 10;
-            dArray[i] = sayi;
-            System.out.println(dArray[i]);
+        Random r = new Random();
+        int randomInt = Math.abs(r.nextInt());
+        int size = randomInt % 10;
+        System.out.println("Size is " + size);
+        int[] intArray = new int[size];
+
+        for (int i = 0; i < intArray.length; i++) {
+            randomInt = r.nextInt();
+            int sayi = randomInt % 10;
+            intArray[i] = sayi;
+        }
+
+        for (int i : intArray) {
+            System.out.print("i: " + i + " ");
+        }
+
+        // Çalışmaz for each içinde tanımlama yapamıoyruz sadece kerana basabiliyoruz
+        for (int i : intArray) {
+            randomInt = r.nextInt();
+            int sayi = randomInt % 10;
+            i=sayi;
 
         }
-         */
-    
 
     }
 
@@ -64,14 +78,10 @@ public class Array {
             System.out.println(intArray[i] + " ");
 
         }
-        
+
         System.out.println();
-        System.out.println("Pizzas: "+ pizza[0].name + pizza[1].name + pizza[2].name +pizza[3].name);
-        
-        
-        
-        
-        
+        System.out.println("Pizzas: " + pizza[0].name + pizza[1].name + pizza[2].name + pizza[3].name);
+
     }
 
 }
