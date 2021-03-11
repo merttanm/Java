@@ -5,8 +5,10 @@
  */
 package array;
 
+import static array.Array.intArray;
 import static java.lang.Math.random;
 import java.lang.annotation.ElementType;
+import java.util.Arrays;
 import java.util.Random;
 
 /**
@@ -32,7 +34,7 @@ public class Array {
 
         Random r = new Random();
         int randomInt = Math.abs(r.nextInt());
-        int size = randomInt % 10;
+        int size = randomInt %10;
         System.out.println("Size is " + size);
         int[] intArray = new int[size];
 
@@ -50,11 +52,48 @@ public class Array {
         for (int i : intArray) {
             randomInt = r.nextInt();
             int sayi = randomInt % 10;
-            i=sayi;
+            i = sayi;
 
         }
+        System.out.println("\n\n");
 
+        int a[][] = {{3, 2, 1}, {4, 5, 7}, {9, 8, 7}};
+
+        System.out.print(a[0][0]);
+        System.out.print("  " + a[0][1]);
+        System.out.println("  " + a[0][2]);
+        System.out.print(a[1][0]);
+        System.out.print("  " + a[1][1]);
+        System.out.println("  " + a[1][2]);
+        System.out.print(a[2][0]);
+        System.out.print("  " + a[2][1]);
+        System.out.print("  " + a[2][2]);
+
+        System.out.println("\n\n");
+
+        
+        Array test = new Array();
+        test.kopyala();
+        test.arama(5);
+        
+        
     }
+    
+    
+    
+    public void kopyala(){
+    
+    int []kopyala=Arrays.copyOf(intArray, intArray.length);
+    print(kopyala);
+    }
+    
+    public void arama(int key){
+        System.out.println();
+    int index=Arrays.binarySearch(intArray,key );
+        System.out.println("sayı "+key+":"+index);
+    
+    }
+    
 
     public static void doldur() {
         Random random = new Random();
@@ -82,6 +121,14 @@ public class Array {
         System.out.println();
         System.out.println("Pizzas: " + pizza[0].name + pizza[1].name + pizza[2].name + pizza[3].name);
 
+    }
+
+    private void print(int[] intArray) {
+        for (int i = 0; i < 10; i++) {
+            System.out.print(intArray[i] + " ");    
+        } 
+        System.out.println("\nArray size: "+ intArray.length);
+        
     }
 
 }
