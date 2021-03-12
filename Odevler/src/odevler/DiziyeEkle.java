@@ -12,8 +12,8 @@ import java.util.Scanner;
  * @author MERT
  */
 public class DiziyeEkle {
-    public static void main(String[] args) {
-        SieveofErosthenes soe = new SieveofErosthenes();
+      public static void main(String[] args) {
+        Odevler soe = new Odevler();
         System.out.println("Lütfen bir sayı giriniz");
         Scanner scn = new Scanner(System.in);
         int n = scn.nextInt();
@@ -21,6 +21,7 @@ public class DiziyeEkle {
         
         for (int i = 0; i < 5; i++) {
             array[i]= scn.nextInt();
+            System.out.println(i+" "+array[i]);
         }
         System.out.println("\n");
         
