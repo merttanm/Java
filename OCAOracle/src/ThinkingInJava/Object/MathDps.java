@@ -9,8 +9,6 @@ package ThinkingInJava.Object;
  *
  * @author MERT
  */
-public class Letter {
-    
-    char c;
+public class MathDps {
     
 }
