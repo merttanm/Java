@@ -5,6 +5,10 @@
  */
 package ThinkingInJava.Object;
 
+import java.util.Date;
+
+
+
 /**
  *
  * @author MERT
@@ -22,9 +26,43 @@ public class Object {
         System.out.println(c);
 
         String a = new String("Selam");
+        OnlyData data =new OnlyData();
+        //data.; = 47;
+        data.d=2.3;
+        data.b=false;
+        
+        
+        System.out.println(new Date());
+        
+        
     
   
     }
+    
+    boolean flag()
+    {
+    return true;
+    }
+    
+    
+    double naturelLogBase()
+    {
+    return 23.1;
+    }
+    
+    void nothing()
+    {
+    return;
+    }
+    
+    
+    void nothing2()
+    {
+    
+    }
+    
+    
+    
 
 }
 
@@ -32,5 +70,13 @@ class ATypeName {
 
     ATypeName a = new ATypeName();
    
+
+}
+
+class OnlyData{
+
+int i;
+double d;
+boolean b;
 
 }
