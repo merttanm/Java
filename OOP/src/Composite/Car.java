@@ -26,5 +26,5 @@ public class Car {
     int speed;
     int distance;
     Person owner;
-    String make;
+   
 }
