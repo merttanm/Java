@@ -26,5 +26,19 @@ public class Car {
     int speed;
     int distance;
     Person owner;
-   
+
+    public String print() {
+        String ekranaBas = "Araç bilgisi:" + year + " " + make + " " + model + " " + speed + " " + distance + " ";
+
+        if(owner!=null)
+        {
+        ekranaBas+= owner.firstName+ " " +owner.lastName+ " "+owner.tckn;
+        }
+        else
+             ekranaBas+=" Sahibi yok";
+        
+        return ekranaBas;
+
+    }
+
 }

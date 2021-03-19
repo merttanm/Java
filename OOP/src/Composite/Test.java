@@ -19,16 +19,17 @@ public class Test {
         person.tckn = "1234567810012";
 
         Car car = new Car();
-        car.make="asdasd";
-        car.model="320";
-        car.distance=13;
-        car.speed=230;
-        car.year="1995";
-        car.owner=person;
+        car.make = "asdasd";
+        car.model = "320";
+        car.distance = 13;
+        car.speed = 230;
+        car.year = "1995";
+        car.owner = person;
         
         
-        
-        
+
+        System.out.println(car.print());
+        System.out.println(person.kisiBilgisi());
 
     }
 

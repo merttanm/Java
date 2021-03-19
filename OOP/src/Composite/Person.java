@@ -11,12 +11,6 @@ package Composite;
  */
 public class Person {
 
-    /*
-    public String name;
-    public String surname;
-    public String tckn;
-    public Car vecihle;
-     */
 
     String tckn;
     String firstName;
@@ -24,5 +18,21 @@ public class Person {
 
     // Car of the person
     Car vehicle;
+    
+    public String kisiBilgisi()
+    {
+    String kisiBas="Kişisel bilgileri: "+ firstName+ " "+ lastName+ " " + tckn;
+    if(vehicle!=null)
+    {
+        kisiBas += " "+ vehicle.make + " " + vehicle.model+ " " + vehicle.year +" " + vehicle.distance+ " " +vehicle.speed;
+    }
+    else
+         kisiBas += " Arac yok";
+    
+    return kisiBas;
+    
+    }
+    
+    
     
 }
