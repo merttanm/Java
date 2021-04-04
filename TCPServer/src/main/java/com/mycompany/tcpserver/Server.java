@@ -28,6 +28,8 @@ public class Server {
         try {
             this.port = port;
             this.socket = new ServerSocket(port);
+            this.ListenThread=new ListenThread(this.socket);
+            
         } catch (IOException ex) {
             Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -35,26 +37,7 @@ public class Server {
     }
 
     public void Listen() {
-        while (!this.socket.isClosed()) {
-            try {
-                System.out.println("Listening");
-                Socket nClint = this.socket.accept();
-                System.out.println("Clint Connected");
-                ObjectOutputStream cOutput = new ObjectOutputStream(nClint.getOutputStream());
-                ObjectInputStream cInput = new ObjectInputStream(nClint.getInputStream());
-
-                Object obj = cInput.readObject();
-                System.out.println(obj.toString());
-                
-                cOutput.writeObject("Aleykümselam");
-
-            } catch (IOException ex) {
-                Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (ClassNotFoundException ex) {
-                Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
-            }
-
-        }
+      this.ListenThread.start();
     }
 }
 
@@ -72,20 +55,24 @@ class ListenThread extends Thread {
 
         while (!this.socket.isClosed()) {
             try {
-                Socket nClint = this.socket.accept();
-                ObjectOutputStream cOutput = new ObjectOutputStream(nClint.getOutputStream());
-                ObjectInputStream cInput = new ObjectInputStream(nClint.getInputStream());
+                Socket nSocket = this.socket.accept();
+                SClient nClient= new SClient(nSocket);
+                nClient.Listen();
+                /*
+                ObjectOutputStream cOutput = new ObjectOutputStream(nSocket.getOutputStream());
+                ObjectInputStream cInput = new ObjectInputStream(nSocket.getInputStream());
 
                 Object obj = cInput.readObject();
                 System.out.println(obj.toString());
 
                 cOutput.writeObject("Aleykümselam");
-
+*/
             } catch (IOException ex) {
                 Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (ClassNotFoundException ex) {
+            } 
+            /*catch (ClassNotFoundException ex) {
                 Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
-            }
+            }*/
 
         }
     }
