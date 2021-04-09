@@ -11,38 +11,45 @@ package com.mycompany.haftasonucalismasi;
  */
 public class Car {
 
-    String model;
-    String marka;
-    String renk;
-    Boolean kazalimi;
-    String sase;
-    Integer km;
-    Integer yası;
+    public String model;
+    public String marka;
+    public String renk;
+    public Boolean kazalimi;
+    public String sase;
+    public Integer km;
+    public Integer kmarttir;
+    public Integer yası;
 
-    void yazdir(String model, String marka, String renk, Boolean kazalimi,Integer km, String sase, Integer yası) {
-        System.out.println("--------Araç bilgileri--------");
+    public String yazdir() {
+        /*System.out.println("--------Araç bilgileri--------");
         System.out.println("Marka: " + marka);
         System.out.println("Model: " + model);
         System.out.println("Renk: " + renk);
         System.out.println("Kazalımı: " + kazalimi);
         System.out.println("Şase numarası: " + sase);
         System.out.println("Kilometresi: " + km);
-        System.out.println("Yaşı: " + yası);
-        
+        System.out.println("Yaşı: " + yası);*/
+        String info = "Marka: " + marka
+                +"\n"+ "Model: " + model 
+                +"\n"+ "Renk: " + renk 
+                +"\n"+ "Kazalımı: " + kazalimi
+                +"\n" + "Şase numarası: " + sase 
+                +"\n"+"Kilometresi: " + km 
+                +"\n"+ "Yaşı: " + yası ;
+        System.out.println("-----------------------------");
         if(kazalimi==false)
         {
-            System.out.println("arac kazali değil");
-        
+            System.out.println( sase +  " Şase umaralı arac kazali değil");
+          System.out.println("-----------------------------");
         }
         
         üstKalite(kazalimi,yası);
-
+        return info;
     }
     
-    void kilometreArtisi(Integer km){
-       
-        km += km ;
-        System.out.println("Kilometresi: " + km);
+   public Integer kilometreArtisi(int arttir){
+        km += arttir;
+        return km;
     }
     
     void üstKalite(Boolean kazalimi, Integer yası){

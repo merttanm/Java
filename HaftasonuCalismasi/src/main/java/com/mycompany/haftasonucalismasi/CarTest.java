@@ -12,10 +12,20 @@ package com.mycompany.haftasonucalismasi;
 public class CarTest {
 
     public static void main(String[] args) {
-        Car car = new Car();
-        car.yazdir("520", "BMW", "Beyaz", false, 10_000_000 , "A12NM46M141", 4)  ;
-        car.km.compareTo(222);
         
+        Car car = new Car();
+        car.kazalimi=false;
+        car.marka="bmw";
+        car.model="320";
+        car.renk="Bordo";
+        car.yası=12;
+        car.km=100_000_000;
+        car.sase="A98S8D8G9G";
+        System.out.println(car.yazdir());
+        car.kilometreArtisi(56);
+        System.out.println(car.yazdir());
+        
+       
         
 
     }
