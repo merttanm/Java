@@ -13,7 +13,9 @@ public class CarTest {
 
     public static void main(String[] args) {
         Car car = new Car();
-        car.yazdir("520", "BMW", "Beyaz", false, "A12NM46M141", 4);
+        car.yazdir("520", "BMW", "Beyaz", false, 10_000_000 , "A12NM46M141", 4)  ;
+        car.km.compareTo(222);
+        
         
 
     }
