@@ -46,19 +46,19 @@ class ListenThread extends Thread {
     private ServerSocket socket;
 
     public ListenThread(ServerSocket socket) {
-        //    this.socket = socket;
-
+            this.socket = socket;
     }
-
     @Override
     public void run() {
 
         while (!this.socket.isClosed()) {
             try {
+                System.out.println("Listening");
                 Socket nSocket = this.socket.accept();
-                SClient nClient= new SClient(nSocket);
-                nClient.Listen();
-                /*
+                System.out.println("Clint Connected");
+             /*   SClient nClient= new SClient(nSocket);
+                nClient.Listen();*/
+                
                 ObjectOutputStream cOutput = new ObjectOutputStream(nSocket.getOutputStream());
                 ObjectInputStream cInput = new ObjectInputStream(nSocket.getInputStream());
 
@@ -66,9 +66,11 @@ class ListenThread extends Thread {
                 System.out.println(obj.toString());
 
                 cOutput.writeObject("Aleykümselam");
-*/
+
             } catch (IOException ex) {
                 Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (ClassNotFoundException ex) {
+                Logger.getLogger(ListenThread.class.getName()).log(Level.SEVERE, null, ex);
             } 
             /*catch (ClassNotFoundException ex) {
                 Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
