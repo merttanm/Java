@@ -5,6 +5,8 @@
  */
 package com.mycompany.tcpserver;
 
+import javax.swing.DefaultListModel;
+
 /**
  *
  * @author MERT
@@ -14,8 +16,16 @@ public class FrmServer extends javax.swing.JFrame {
     /**
      * Creates new form FrmServer
      */
+    
+    Server myServer;
+    public static DefaultListModel clintMessageModel;
+    
+    
     public FrmServer() {
         initComponents();
+        this.myServer= new Server(5000);
+        clintMessageModel = new DefaultListModel();
+        jList1.setModel(clintMessageModel);
     }
 
     /**
