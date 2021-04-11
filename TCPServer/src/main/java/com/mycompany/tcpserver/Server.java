@@ -54,24 +54,23 @@ class ListenThread extends Thread {
         while (!this.socket.isClosed()) {
             try {
                 System.out.println("Listening");
-                Socket nSocket = this.socket.accept();
-                System.out.println("Clint Connected");
-             /*   SClient nClient= new SClient(nSocket);
-                nClient.Listen();*/
+                Socket nSocket = this.socket.accept();     
+                SClient nClient= new SClient(nSocket);
+                nClient.Listen();
                 
-                ObjectOutputStream cOutput = new ObjectOutputStream(nSocket.getOutputStream());
+                /*ObjectOutputStream cOutput = new ObjectOutputStream(nSocket.getOutputStream());
                 ObjectInputStream cInput = new ObjectInputStream(nSocket.getInputStream());
 
                 Object obj = cInput.readObject();
                 System.out.println(obj.toString());
-
-                cOutput.writeObject("Aleykümselam");
+*/
+             
 
             } catch (IOException ex) {
                 Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (ClassNotFoundException ex) {
+            } /*catch (ClassNotFoundException ex) {
                 Logger.getLogger(ListenThread.class.getName()).log(Level.SEVERE, null, ex);
-            } 
+            } */
             /*catch (ClassNotFoundException ex) {
                 Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
             }*/
