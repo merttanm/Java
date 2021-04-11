@@ -18,11 +18,13 @@ public class CarTest {
         car.marka="bmw";
         car.model="320";
         car.renk="Bordo";
-        car.yası=12;
+        car.yası=2;
         car.km=100_000_000;
         car.sase="A98S8D8G9G";
+      
         System.out.println(car.yazdir());
-        car.kilometreArtisi(56);
+        
+        car.kilometreArtisi(333,true);
         System.out.println(car.yazdir());
         
        
