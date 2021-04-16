@@ -11,4 +11,9 @@ package Example1;
  */
 public class Personel {
     
+    void doTask() {
+        Task t = new Task();
+        t.doSometing(123);
+    }
+    
 }

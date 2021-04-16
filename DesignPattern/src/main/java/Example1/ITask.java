@@ -9,10 +9,8 @@ package Example1;
  *
  * @author MERT
  */
-public class Test {
-    public static void main(String[] args) {
-        Task tsk= new Task();
-        tsk.doSometing(0);
-    }
+public interface ITask {
+    
+    void doSometing();
     
 }
