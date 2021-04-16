@@ -3,17 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Example1;
+package Example3;
 
 /**
  *
  * @author MERT
  */
-public class Personel {
-    
-    void doTask() {
-        ITask t = new Task();
-        t.doSometing();
-    }
+public class Test {
     
 }

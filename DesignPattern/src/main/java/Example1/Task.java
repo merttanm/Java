@@ -11,7 +11,9 @@ package Example1;
  */
 public class Task  implements ITask {
     
-    void doSometing(int starYears){
+    int start, end; 
+    
+    void doSometing(int startYeard, int endDate){
     
         System.out.println("Starting Making Someting");
     
@@ -19,7 +21,7 @@ public class Task  implements ITask {
 
     @Override
     public void doSometing() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        doSometing(start,end);
     }
     
 }

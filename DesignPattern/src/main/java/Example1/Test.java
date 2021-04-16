@@ -12,7 +12,7 @@ package Example1;
 public class Test {
     public static void main(String[] args) {
         Task tsk= new Task();
-        tsk.doSometing(0);
+        tsk.doSometing(0,5);
     }
     
 }
