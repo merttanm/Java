@@ -36,8 +36,8 @@ public class Client {
             String bas="SelamınAleyküm";
             this.cOutput.writeObject(bas);
             
-            Object obj=cInput.readObject();
-            System.out.println(obj.toString());
+            Object msg=cInput.readObject();
+            System.out.println(msg.toString());
             
             
             

@@ -74,6 +74,8 @@ class ClientListenThread extends Thread {
             try {
                 Object msg = this.client.cInput.readObject();
                 System.out.println(msg.toString());
+                FrmServer.clintMessageModel.addElement(msg);
+                
             } catch (IOException ex) {
                 Logger.getLogger(ClientListenThread.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ClassNotFoundException ex) {

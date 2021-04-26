@@ -10,6 +10,7 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -22,13 +23,14 @@ public class Server {
     public ServerSocket socket;
     public ListenThread ListenThread;
     public int port;
+    public ArrayList<SClient> clients;
 
     public Server(int port) {
 
         try {
             this.port = port;
             this.socket = new ServerSocket(port);
-            this.ListenThread=new ListenThread(this.socket);
+            this.clients = new ArrayList<SClient>();
             
         } catch (IOException ex) {
             Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
@@ -37,43 +39,45 @@ public class Server {
     }
 
     public void Listen() {
-      this.ListenThread.start();
+        this.ListenThread = new ListenThread(this);
+        this.ListenThread.start();
+    }
+
+    public void SendBoardCase(Object msg) {
+        for (SClient client : clients) {
+
+            try {
+                client.cOutput.writeObject(msg);
+            } catch (IOException ex) {
+                Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        }
     }
 }
 
 class ListenThread extends Thread {
 
-    private ServerSocket socket;
+    private Server server;
 
-    public ListenThread(ServerSocket socket) {
-            this.socket = socket;
+    public ListenThread(Server server) {
+        this.server = server;
     }
+
     @Override
     public void run() {
 
-        while (!this.socket.isClosed()) {
+        while (!this.server.socket.isClosed()) {
             try {
                 System.out.println("Listening");
-                Socket nSocket = this.socket.accept();     
-                SClient nClient= new SClient(nSocket);
+                Socket nSocket = this.server.socket.accept();
+                SClient nClient = new SClient(nSocket);
                 nClient.Listen();
-                
-                /*ObjectOutputStream cOutput = new ObjectOutputStream(nSocket.getOutputStream());
-                ObjectInputStream cInput = new ObjectInputStream(nSocket.getInputStream());
-
-                Object obj = cInput.readObject();
-                System.out.println(obj.toString());
-*/
-             
+                this.server.clients.add(nClient);
 
             } catch (IOException ex) {
                 Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
-            } /*catch (ClassNotFoundException ex) {
-                Logger.getLogger(ListenThread.class.getName()).log(Level.SEVERE, null, ex);
-            } */
-            /*catch (ClassNotFoundException ex) {
-                Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
-            }*/
+            }
 
         }
     }
