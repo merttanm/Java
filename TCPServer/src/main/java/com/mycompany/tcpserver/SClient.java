@@ -72,6 +72,7 @@ class ClientListenThread extends Thread {
         while (!this.client.socket.isClosed()) {
 
             try {
+                System.out.println("Waiting message from clint");
                 Object msg = this.client.cInput.readObject();
                 System.out.println(msg.toString());
                 FrmServer.clintMessageModel.addElement(msg);

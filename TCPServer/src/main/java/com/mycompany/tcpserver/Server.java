@@ -71,6 +71,7 @@ class ListenThread extends Thread {
             try {
                 System.out.println("Listening");
                 Socket nSocket = this.server.socket.accept();
+                
                 SClient nClient = new SClient(nSocket);
                 nClient.Listen();
                 this.server.clients.add(nClient);
