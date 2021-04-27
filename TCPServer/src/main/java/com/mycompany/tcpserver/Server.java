@@ -31,7 +31,7 @@ public class Server {
             this.port = port;
             this.socket = new ServerSocket(port);
             this.clients = new ArrayList<SClient>();
-            
+
         } catch (IOException ex) {
             Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -54,6 +54,45 @@ public class Server {
 
         }
     }
+
+    public void SendClintBoardCase(Object msg, int id) {
+        for (SClient client : clients) {
+
+            try {
+                if (id == client.id) {
+                    client.cOutput.writeObject(msg);
+                    break;
+                }
+
+            } catch (IOException ex) {
+                Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+        }
+    }
+
+    public void RemoveClint(SClient client) {
+        for (int i = 0; i < this.clients.size(); i++) {
+            if (this.clients.get(i).id == client.id) {
+                this.clients.remove(i);
+                break;
+            }
+        }
+
+    }
+
+    public void UpdateClientList() {
+
+        FrmServer.clintConnectinMessageModel.removeAllElements();
+        for (SClient client : clients) {
+            FrmServer.clintConnectinMessageModel.addElement(client.id);
+        }
+    }
+    public void MessageReceived(Object msg) {
+
+        FrmServer.clintConnectinMessageModel.addElement(msg.toString());
+       
+    }
 }
 
 class ListenThread extends Thread {
@@ -71,10 +110,11 @@ class ListenThread extends Thread {
             try {
                 System.out.println("Listening");
                 Socket nSocket = this.server.socket.accept();
-                
+
                 SClient nClient = new SClient(nSocket);
                 nClient.Listen();
                 this.server.clients.add(nClient);
+                FrmServer.clintConnectinMessageModel.addElement(nClient.id);
 
             } catch (IOException ex) {
                 Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
