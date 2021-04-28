@@ -43,29 +43,20 @@ public class Server {
         this.ListenThread.start();
     }
 
-    public void SendBoardCase(Object msg) {
+    public void SendBoardCaseMessage(Object msg) {
         for (SClient client : clients) {
 
-            try {
-                client.cOutput.writeObject(msg);
-            } catch (IOException ex) {
-                Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
-            }
+            client.sendMessage(msg);
 
         }
     }
 
     public void SendClintBoardCase(Object msg, int id) {
+      
         for (SClient client : clients) {
-
-            try {
-                if (id == client.id) {
-                    client.cOutput.writeObject(msg);
-                    break;
-                }
-
-            } catch (IOException ex) {
-                Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
+            if (id == client.id) {
+                client.sendMessage(msg);
+                break;
             }
 
         }
@@ -78,6 +69,7 @@ public class Server {
                 break;
             }
         }
+        this.UpdateClientList();
 
     }
 
@@ -88,11 +80,13 @@ public class Server {
             FrmServer.clintConnectinMessageModel.addElement(client.id);
         }
     }
+
     public void MessageReceived(Object msg) {
 
         FrmServer.clintConnectinMessageModel.addElement(msg.toString());
-       
+
     }
+
 }
 
 class ListenThread extends Thread {
@@ -111,7 +105,7 @@ class ListenThread extends Thread {
                 System.out.println("Listening");
                 Socket nSocket = this.server.socket.accept();
 
-                SClient nClient = new SClient(nSocket);
+                SClient nClient = new SClient(nSocket, this.server);
                 nClient.Listen();
                 this.server.clients.add(nClient);
                 FrmServer.clintConnectinMessageModel.addElement(nClient.id);

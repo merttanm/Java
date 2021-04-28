@@ -40,6 +40,7 @@ public class FrmServer extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPopupMenu1 = new javax.swing.JPopupMenu();
         btn_start = new javax.swing.JButton();
         txt_port = new javax.swing.JTextField();
         btn_sendbroadcast = new javax.swing.JButton();
@@ -138,7 +139,7 @@ public class FrmServer extends javax.swing.JFrame {
     private void btn_sendbroadcastActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_sendbroadcastActionPerformed
         // TODO add your handling code here:
         
-        this.myServer.SendBoardCase(jTextArea1.getText());
+        this.myServer.SendBoardCaseMessage(jTextArea1.getText());
         
         
         
@@ -190,6 +191,7 @@ public class FrmServer extends javax.swing.JFrame {
     private javax.swing.JButton btn_start;
     private javax.swing.JButton jButton1;
     private javax.swing.JList<String> jList1;
+    private javax.swing.JPopupMenu jPopupMenu1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;

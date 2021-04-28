@@ -20,13 +20,14 @@ import java.util.logging.Logger;
 public class SClient {
     
     public static int idCount;
+    public Server server;
     public int id;
-    Socket socket;
-    ObjectInputStream cInput;
-    ObjectOutputStream cOutput;
-    ClientListenThread listenThread;
+    public Socket socket;
+    public ObjectInputStream cInput;
+    public ObjectOutputStream cOutput;
+    public ClientListenThread listenThread;
 
-    public SClient(Socket socket) throws IOException {
+    public SClient(Socket socket, Server server) throws IOException {
         this.id=idCount;
         idCount++;
         this.socket = socket;
@@ -78,8 +79,10 @@ class ClientListenThread extends Thread {
                 FrmServer.clintMessageModel.addElement(msg);
                 
             } catch (IOException ex) {
+                this.client.server.RemoveClint(client);
                 Logger.getLogger(ClientListenThread.class.getName()).log(Level.SEVERE, null, ex);
             } catch (ClassNotFoundException ex) {
+                this.client.server.RemoveClint(client);
                 Logger.getLogger(ClientListenThread.class.getName()).log(Level.SEVERE, null, ex);
             }
 
