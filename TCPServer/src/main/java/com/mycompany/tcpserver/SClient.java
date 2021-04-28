@@ -26,6 +26,7 @@ public class SClient {
     public ObjectInputStream cInput;
     public ObjectOutputStream cOutput;
     public ClientListenThread listenThread;
+    public boolean isConnected;
 
     public SClient(Socket socket, Server server) throws IOException {
         this.id=idCount;
@@ -33,8 +34,10 @@ public class SClient {
         this.socket = socket;
         this.cOutput = new ObjectOutputStream(this.socket.getOutputStream());
         this.cInput = new ObjectInputStream(this.socket.getInputStream());
+        
         this.listenThread = new ClientListenThread(this);
         System.out.println("Clint Connection...");
+        this.isConnected=false;
     }
 
     public void sendMessage(Object msg) {
@@ -52,9 +55,11 @@ public class SClient {
     }
 
     public void Listen() {
+        
+        this.isConnected=true;
         this.listenThread.start();
         System.out.println("Clint listining...");
-
+         
     }
 
 }
@@ -70,7 +75,7 @@ class ClientListenThread extends Thread {
     @Override
     public void run() {
 
-        while (!this.client.socket.isClosed()) {
+        while (!this.client.socket.isConnected()) {
 
             try {
                 System.out.println("Waiting message from clint");
