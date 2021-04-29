@@ -52,7 +52,7 @@ public class Server {
     }
 
     public void SendClintBoardCase(Object msg, int id) {
-      
+
         for (SClient client : clients) {
             if (id == client.id) {
                 client.sendMessage(msg);
@@ -65,6 +65,7 @@ public class Server {
     public void RemoveClint(SClient client) {
         for (int i = 0; i < this.clients.size(); i++) {
             if (this.clients.get(i).id == client.id) {
+                this.clients.get(i).cloase();
                 this.clients.remove(i);
                 break;
             }

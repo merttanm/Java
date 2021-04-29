@@ -18,7 +18,7 @@ import java.util.logging.Logger;
  * @author MERT
  */
 public class SClient {
-    
+
     public static int idCount;
     public Server server;
     public int id;
@@ -29,15 +29,28 @@ public class SClient {
     public boolean isConnected;
 
     public SClient(Socket socket, Server server) throws IOException {
-        this.id=idCount;
+        this.id = idCount;
         idCount++;
         this.socket = socket;
         this.cOutput = new ObjectOutputStream(this.socket.getOutputStream());
         this.cInput = new ObjectInputStream(this.socket.getInputStream());
-        
+
         this.listenThread = new ClientListenThread(this);
         System.out.println("Clint Connection...");
-        this.isConnected=false;
+        this.isConnected = false;
+    }
+
+    public void cloase() {
+
+        try {
+            this.isConnected = true;
+            this.socket.close();
+            this.cInput.close();
+            this.cOutput.close();
+        } catch (IOException ex) {
+            Logger.getLogger(SClient.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
     }
 
     public void sendMessage(Object msg) {
@@ -55,11 +68,11 @@ public class SClient {
     }
 
     public void Listen() {
-        
-        this.isConnected=true;
+
+        this.isConnected = true;
         this.listenThread.start();
         System.out.println("Clint listining...");
-         
+
     }
 
 }
@@ -82,7 +95,7 @@ class ClientListenThread extends Thread {
                 Object msg = this.client.cInput.readObject();
                 System.out.println(msg.toString());
                 FrmServer.clintMessageModel.addElement(msg);
-                
+
             } catch (IOException ex) {
                 this.client.server.RemoveClint(client);
                 Logger.getLogger(ClientListenThread.class.getName()).log(Level.SEVERE, null, ex);
