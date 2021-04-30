@@ -40,10 +40,10 @@ public class SClient {
         this.isConnected = false;
     }
 
-    public void cloase() {
+    public void close() {
 
         try {
-            this.isConnected = true;
+            this.isConnected = false;
             this.socket.close();
             this.cInput.close();
             this.cOutput.close();
@@ -88,7 +88,7 @@ class ClientListenThread extends Thread {
     @Override
     public void run() {
 
-        while (!this.client.socket.isConnected()) {
+        while (this.client.isConnected) {
 
             try {
                 System.out.println("Waiting message from clint");

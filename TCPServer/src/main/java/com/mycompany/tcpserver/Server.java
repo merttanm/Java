@@ -65,7 +65,7 @@ public class Server {
     public void RemoveClint(SClient client) {
         for (int i = 0; i < this.clients.size(); i++) {
             if (this.clients.get(i).id == client.id) {
-                this.clients.get(i).cloase();
+                this.clients.get(i).close();
                 this.clients.remove(i);
                 break;
             }
@@ -106,7 +106,7 @@ class ListenThread extends Thread {
                 System.out.println("Listening");
                 Socket nSocket = this.server.socket.accept();
 
-                SClient nClient = new SClient(nSocket, this.server);
+                SClient  nClient = new SClient(nSocket, this.server);
                 nClient.Listen();
                 this.server.clients.add(nClient);
                 FrmServer.clintConnectinMessageModel.addElement(nClient.id);
