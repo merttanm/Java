@@ -14,7 +14,7 @@ import java.util.ArrayList;
 public class ExampleTest3 {
 
     public static void main(String[] args) {
-        Documet d= new Documet();
+        Documet d = new Documet();
         d.addPage(new Page());
         d.addPage(new Page());
         d.showPages();
@@ -27,7 +27,16 @@ public class ExampleTest3 {
             System.out.println("Render");
         }
     }
+    // Low Level
 
+    void showPages() {
+        for (Page page : pages) {
+            page.render();
+
+        }
+    }
+
+// High Level
     static class Documet {
 
         ArrayList<Page> pages = new ArrayList();
@@ -36,11 +45,5 @@ public class ExampleTest3 {
             pages.add(p);
         }
 
-        void showPages() {
-            for (Page page : pages) {
-                page.render();
-
-            }
-        }
     }
 }
