@@ -11,16 +11,16 @@ package Example1;
  */
 public class Task implements ITask {
 
-    int year;
+   // int start, end;
 
-    void doSomething() {
+    void makeSomething() {
         System.out.println("Starting Making Something...");
     }
 
     @Override
     public void doSomething() {
 
-        doSomething(year);
+        makeSomething();
     }
 
 }
