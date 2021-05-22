@@ -16,13 +16,14 @@ public class MainTest {
     public static void main(String[] args) {
 
     }
-
+// Super class
     class Car {
-
+// Composition
         ArrayList<Tire> tire;
         Engine motor;
     }
-
+    
+// Sub class
     class Tire {
     }
 
