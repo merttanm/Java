@@ -19,7 +19,6 @@ public class Task implements ITask {
 
     @Override
     public void doSomething() {
-
         makeSomething();
     }
 

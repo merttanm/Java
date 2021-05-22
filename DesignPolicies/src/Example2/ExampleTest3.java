@@ -20,7 +20,8 @@ public class ExampleTest3 {
         d.showPages();
 
     }
-    // Low Level
+// High Level
+
     static class Documet {
 
         ArrayList<Page> pages = new ArrayList();
@@ -29,7 +30,6 @@ public class ExampleTest3 {
             pages.add(p);
         }
 
-
         void showPages() {
             for (Page page : pages) {
                 page.render();
@@ -37,14 +37,13 @@ public class ExampleTest3 {
             }
         }
     }
-    
-// High Level
+
+    // Low Level
     static class Page {
 
         void render() {
             System.out.println("Render");
         }
     }
-
 
 }
