@@ -9,23 +9,22 @@ package AbstractFactoryPatterns;
  *
  * @author MERT
  */
-public class ComponentFactory {
-    
-    enum ComponentType {
-        TextItem, Button
+public class ComponentFactory implements AbstactFactory {
+
+    enum compType implements IProductEnum {
+        Button,
+        TextItem,
     }
 
-    public Component createShape(ComponentType componentType) {
+    public Component create(IProductEnum componentType) {
         Component temp = null;
-        if (componentType == ComponentType.Button) {
-          temp =  new Button();
-        } else if (componentType == ComponentType.TextItem) {
+        if (componentType == ((compType)componentType).Button) {
+            temp = new Button();
+        } else if (componentType == ((compType)componentType).TextItem) {
             temp = new TextItem();
         }
         return temp;
 
     }
 
-
 }
-

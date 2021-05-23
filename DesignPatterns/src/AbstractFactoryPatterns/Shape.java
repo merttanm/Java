@@ -11,7 +11,7 @@ import FactoryPattern.*;
  *
  * @author MERT
  */
-public interface Shape {
+public interface Shape extends Product {
 
     void draw();
 

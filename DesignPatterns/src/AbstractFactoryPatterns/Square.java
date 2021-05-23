@@ -11,11 +11,11 @@ import FactoryPattern.*;
  *
  * @author MERT
  */
-public class Square implements Shape {
+public class Square implements Shape , Product{
     
     @Override
      public String toString() {
-         return "My name is Mert";
+         return "My name is Shape";
     }
 
     @Override

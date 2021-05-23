@@ -9,8 +9,9 @@ package AbstractFactoryPatterns;
  *
  * @author MERT
  */
-public interface Component extends Product{
+public interface AbstactFactory {
     
-  
+    Product create(IProductEnum componentType);
+    
     
 }

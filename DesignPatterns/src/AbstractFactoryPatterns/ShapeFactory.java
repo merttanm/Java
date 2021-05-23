@@ -11,19 +11,21 @@ import FactoryPattern.*;
  *
  * @author MERT
  */
-public class ShapeFactory {
+public class ShapeFactory implements AbstactFactory {
 
-    enum ShapeType {
-        SQUARE, RECTANGLE
+    enum shapeTypeEnum implements IProductEnum {
+        SQUARE,
+        RECTANGLE
     }
 
-    public Shape createShape(ShapeType shapeType) {
+    public Shape create(IProductEnum shapeType) {
         Shape temp = null;
-        if (shapeType == ShapeType.RECTANGLE) {
-            temp = new Rectangle();
-        } else if (shapeType == ShapeType.SQUARE) {
+        if (shapeType == ((shapeTypeEnum)shapeType).SQUARE) {
             temp = new Square();
+        } else if (shapeType == ((shapeTypeEnum)shapeType).RECTANGLE) {
+            temp = new Rectangle();
         }
+
         return temp;
 
     }

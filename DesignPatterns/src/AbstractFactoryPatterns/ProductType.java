@@ -9,8 +9,11 @@ package AbstractFactoryPatterns;
  *
  * @author MERT
  */
-public interface Component extends Product{
-    
-  
-    
+public enum ProductType {
+
+    Button,
+    TextItem,
+    SQUARE,
+    RECTANGLE
+
 }
