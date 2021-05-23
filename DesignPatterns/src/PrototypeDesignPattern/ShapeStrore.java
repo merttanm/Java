@@ -14,4 +14,17 @@ import java.util.Hashtable;
 public class ShapeStrore {
 
     static Hashtable<String, ShapePrototype> shape = new Hashtable<String, ShapePrototype>();
+
+    static {
+
+        shape.put("Circle Lan", new Circle());
+        shape.put("Triangle Lan", new Triangle());
+
+    }
+
+    static ShapePrototype createClone(String shapeType) {
+        return (ShapePrototype)shape.get(shapeType).clone();
+
+    }
+
 }

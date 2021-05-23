@@ -12,11 +12,11 @@ import java.util.logging.Logger;
  *
  * @author MERT
  */
-public class ShapePrototype implements Cloneable {
+public abstract class ShapePrototype implements Cloneable {
 
     int x, y;
-    
-     public void abstract draw();
+
+    abstract void draw();
 
     @Override
     protected Object clone() {
@@ -28,9 +28,5 @@ public class ShapePrototype implements Cloneable {
         }
         return clone;
     }
-    
-   
-       
-    
-    
+
 }

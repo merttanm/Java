@@ -11,11 +11,16 @@ package PrototypeDesignPattern;
  */
 public class Circle extends ShapePrototype {
 
-    /*@Override
+    public Circle(){
+    
+        System.out.println("I  Circle  created");
+    }
+    
+    @Override
     public String toString() {
         return "Circle Class...";
 
-    }*/
+    }
 
     @Override
     void draw() {
@@ -23,4 +28,6 @@ public class Circle extends ShapePrototype {
         
     }
 
+
+    
 }
