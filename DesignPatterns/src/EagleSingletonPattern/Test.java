@@ -14,7 +14,7 @@ public class Test {
     public static void main(String[] args) {
         SingletonClass s1 = new SingletonClass();
         SingletonClass s2 = new SingletonClass();
-       
+        System.out.println(s1==s2);
 
     }
 
