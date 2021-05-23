@@ -9,10 +9,11 @@ package FactoryPattern;
  *
  * @author MERT
  */
-public interface Shape {
+public class Test {
 
-    void draw();
-
-    void erase();
-
+    public static void main(String[] args) {
+        ShapeFactory f = new ShapeFactory();
+        Shape r = f.createShape(ShapeFactory.ShapeType.RECTANGLE);
+        System.out.println(r.toString());
+    }
 }
