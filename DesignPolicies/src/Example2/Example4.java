@@ -12,12 +12,13 @@ import java.util.ArrayList;
  * @author MERT
  */
 public class Example4 {
-    
-    interface IShape{
-    int area();
+
+    interface IShape {
+
+        int area();
     }
 
-    static class Circle  implements IShape{
+    static class Circle implements IShape {
 
         int p, r;
 
@@ -27,7 +28,7 @@ public class Example4 {
         }
     }
 
-    static class Square  implements IShape{
+    static class Square implements IShape {
 
         int r;
 
@@ -39,18 +40,14 @@ public class Example4 {
 
     static class Screen {
 
-        ArrayList<Object> object = new ArrayList();
+        ArrayList<IShape> object = new ArrayList();
 
         int calculateArea() {
             int totalArea = 0;
-            for (Object object : object) {
-                if (object instanceof Circle) {
-                    totalArea += ((Circle) object).area();
-                } else if (object instanceof Square) {
-                     totalArea += ((Square) object).area();
-                }
+            for (IShape object : object) {
+                totalArea += ((Circle) object).area();
             }
-            return 0;
+            return totalArea;
         }
 
     }

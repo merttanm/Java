@@ -11,45 +11,38 @@ package Example2;
  */
 public interface Example5WithInterface {
 
-    interface Flyable{
-    
-    void fly();
-    
+    interface Flyable {
+
+        void fly();
+
     };
-    
-     interface Swimmerable{
-    
-    void swim();
-    
+
+    interface Swimmerable {
+
+        void swim();
+
     };
-    
-    
+
     static class Bird {
     }
 
-    static class FlyBird implements Flyable ,Swimmerable{
+    static class Duck implements Flyable, Swimmerable {
 
         @Override
         public void fly() {
             throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
 
-       
-    }
-
-    static class Duck implements Flyable ,Swimmerable {
-
         @Override
-        public void fly() {
+        public void swim() {
             throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
     }
-
 
     static class Penguin implements Swimmerable {
 
         @Override
-        public void fly() {
+        public void swim() {
             throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
     }
@@ -63,6 +56,4 @@ public interface Example5WithInterface {
 
     }
 
-
-    
 }

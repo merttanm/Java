@@ -37,7 +37,7 @@ public class Example5 {
         Duck d = new Duck();
         d.fly();
         Penguin p = new Penguin();
-      //  p.fly();   Problem
+        //  p.fly();   Problem
 
     }
 
