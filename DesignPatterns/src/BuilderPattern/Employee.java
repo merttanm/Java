@@ -10,5 +10,36 @@ package BuilderPattern;
  * @author MERT
  */
 public class Employee {
-    
+
+    String firstname, lastname, depertment;
+    int salary;
+
+    static class Builder {
+
+        String firstname, lastname, depertment;
+        int salary;
+
+        public Builder firstname(String firstname){
+        this.firstname=firstname;
+        return this;
+        }
+        
+        public Builder lastname(String lastname){
+        this.lastname=lastname;
+        return this;
+        }
+        
+        public Builder depertment(String depertment){
+        this.depertment=depertment;
+        return this;
+        }
+        
+        public Builder salary(Integer salary){
+        this.salary=salary;
+        return this;
+        }
+        
+        
+    }
+
 }
