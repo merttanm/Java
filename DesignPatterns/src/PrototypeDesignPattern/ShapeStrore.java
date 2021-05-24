@@ -5,26 +5,23 @@
  */
 package PrototypeDesignPattern;
 
+import java.util.HashMap;
 import java.util.Hashtable;
+import java.util.Map;
 
 /**
  *
  * @author MERT
  */
 public class ShapeStrore {
-
-    static Hashtable<String, ShapePrototype> shape = new Hashtable<String, ShapePrototype>();
-
-    static {
-
-        shape.put("Circle Lan", new Circle());
-        shape.put("Triangle Lan", new Triangle());
-
+   public static Map<String,ShapePrototype> shapes=new HashMap<String,ShapePrototype>();
+    static{
+        shapes.put("Circle", new Circle());
+        shapes.put("Triangle", new Triangle());
     }
-
-    static ShapePrototype createClone(String shapeType) {
-        return (ShapePrototype)shape.get(shapeType).clone();
-
+ 
+    static ShapePrototype createClone(String shapeType){
+        return (ShapePrototype)shapes.get(shapeType).clone();
     }
 
 }

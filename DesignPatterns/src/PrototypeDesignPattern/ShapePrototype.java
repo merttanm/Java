@@ -14,19 +14,19 @@ import java.util.logging.Logger;
  */
 public abstract class ShapePrototype implements Cloneable {
 
-    int x, y;
-
-    abstract void draw();
+ int x,y;
 
     @Override
     protected Object clone() {
-        Object clone = null;
-        try {
-            clone = super.clone();
-        } catch (CloneNotSupportedException ex) {
-            Logger.getLogger(ShapePrototype.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return clone;
+         Object clone=null;
+         try {
+             clone = super.clone(); //To change body of generated methods, choose Tools | Templates.
+         } catch (CloneNotSupportedException ex) {
+             Logger.getLogger(ShapePrototype.class.getName()).log(Level.SEVERE, null, ex);
+         }
+         return clone; 
     }
+    
+    abstract void draw();
 
 }

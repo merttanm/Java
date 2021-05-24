@@ -11,11 +11,11 @@ package PrototypeDesignPattern;
  */
 public class Circle extends ShapePrototype {
 
-    public Circle(){
-    
+    public Circle() {
+
         System.out.println("I  Circle  created");
     }
-    
+
     @Override
     public String toString() {
         return "Circle Class...";
@@ -23,11 +23,9 @@ public class Circle extends ShapePrototype {
     }
 
     @Override
-    void draw() {
+    public void draw() {
         System.out.println("I m Circle ");
-        
+
     }
 
-
-    
 }

@@ -12,11 +12,18 @@ package PrototypeDesignPattern;
 public class Test {
 
     public static void main(String[] args) {
-        Circle c = (Circle) ShapeStrore.createClone("Circle la");
+      Circle c=(Circle)ShapeStrore.createClone("Circle");
         c.draw();
-        Triangle t = (Triangle) ShapeStrore.createClone("Triangle la");
+        Triangle t=(Triangle)ShapeStrore.createClone("Triangle");
         t.draw();
-
+        System.out.println(t);
+        Triangle t1=(Triangle)ShapeStrore.createClone("Triangle");
+         
+        t1.draw();
+        System.out.println(t1);
+        Triangle t2=(Triangle)ShapeStrore.createClone("Triangle");
+        t2.draw();
+        System.out.println(t2);
     }
 
 }
