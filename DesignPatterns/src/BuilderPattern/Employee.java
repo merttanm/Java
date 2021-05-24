@@ -49,7 +49,7 @@ public class Employee {
 
         Employee build() {
 
-            Employee e= new Employee(this);
+            Employee e = new Employee(this);
             System.out.println(e);
             return e;
         }
