@@ -12,7 +12,6 @@ package PrototypeDesignPattern;
 public class Circle extends ShapePrototype {
 
     public Circle() {
-
         System.out.println("I  Circle  created");
     }
 
