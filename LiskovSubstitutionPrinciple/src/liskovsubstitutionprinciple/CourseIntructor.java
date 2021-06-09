@@ -9,11 +9,8 @@ package liskovsubstitutionprinciple;
  *
  * @author MERT
  */
-public class EnglishTeacher extends SchoolStaf  implements CourseIntructor{
+public interface CourseIntructor {
     
-    @Override
-    public void teach() {
-        System.out.println("Taught English...");
-    }
+    public void teach();
     
 }

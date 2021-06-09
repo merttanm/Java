@@ -9,11 +9,11 @@ package liskovsubstitutionprinciple;
  *
  * @author MERT
  */
-public class EnglishTeacher extends SchoolStaf  implements CourseIntructor{
-    
+public class ScienceTeacher extends SchoolStaf implements CourseIntructor{
+
     @Override
     public void teach() {
-        System.out.println("Taught English...");
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
 }
