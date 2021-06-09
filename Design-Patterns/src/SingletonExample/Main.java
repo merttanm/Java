@@ -3,19 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package liskovsubstitutionprinciple;
+package SingletonExample;
 
 /**
  *
  * @author MERT
  */
-public class LiskovSubstitutionPrinciple {
+public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Singleton sing = new Singleton();
+        sing.showMessage();
+        sing.showMessage();
+        sing.showMessage();
+        sing.showMessage();
+        sing.showMessage();
+
     }
-    
+
 }

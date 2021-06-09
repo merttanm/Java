@@ -9,7 +9,7 @@ package liskovsubstitutionprinciple;
  *
  * @author MERT
  */
-public class SchoolStaf {
+public class SchoolStaff {
 
     private void makeAnnouncements() {
         System.out.println("make Announcements...");

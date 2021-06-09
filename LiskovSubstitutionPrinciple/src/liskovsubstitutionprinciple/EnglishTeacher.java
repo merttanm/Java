@@ -9,7 +9,7 @@ package liskovsubstitutionprinciple;
  *
  * @author MERT
  */
-public class EnglishTeacher extends SchoolStaf  implements CourseIntructor{
+public class EnglishTeacher extends SchoolStaff  implements CourseIntructor{
     
     @Override
     public void teach() {

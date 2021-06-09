@@ -9,11 +9,6 @@ package liskovsubstitutionprinciple;
  *
  * @author MERT
  */
-public class MathTeacher extends SchoolStaff implements CourseIntructor{
-    
-    @Override
-    public void teach() {
-        System.out.println("Taught Math...");
-    }
-    
+public class SubstituteTeacher extends SchoolStaff {
+
 }
