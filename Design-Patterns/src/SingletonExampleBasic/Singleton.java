@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package SingletonExample;
+package SingletonExampleBasic;
 
 /**
  *
@@ -27,5 +27,7 @@ public class Singleton {
     public void showMessage(){
         System.out.println("Creat Singleton Object...");
     }
+    
+
     
 }
