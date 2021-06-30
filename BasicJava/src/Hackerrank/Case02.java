@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author MERT
  */
-public class NewClass1 {
+public class Case02 {
 
     /*
 Explanation
@@ -26,14 +26,28 @@ Sample Case 1: n=24
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int N = scanner.nextInt();
+       int N = scanner.nextInt();
 
-        if (N > 20) {
+        if (N > 20 && N<29) {
             System.out.println("Not Weird");
-        } else {
+        } else if( N<=20&& N>4) {
             System.out.println("Weird");
+        }else if(N==29){
+          System.out.println("Weird");
         }
+        else if (N>29){
+          System.out.println("Not Weird");
+        }
+        else if(N==4){
+          System.out.println("Not Weird");
+        }
+        else if(N<=3){
+          System.out.println("Weird");
+        }
+        
+        else
 
         scanner.close();
+        
     }
 }
