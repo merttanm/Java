@@ -13,6 +13,8 @@ import References.UserModel;
  */
 public class VariableAndType {
 
+    int karpuz;
+
     /**
      * @param args the command line arguments
      */
@@ -99,16 +101,16 @@ public class VariableAndType {
         System.out.println("Pelkas\f\fAlex");
         System.out.println("Erzinca\nlı");
         System.out.println("ÖlürümTürkğ\\iyem");
-        /*
+
         System.out.println("-----------------------var tipi---------------------------------");
-        
+        /*
          int j=6;
          System.out.println("j: "+j);
          byte b=45;
          var jjj=b/4.0;
          System.out.println("jjj:" +jjj);
+         
          */
-
         System.out.println("-----------------------Tür Dönüşümleri---------------------------------");
 
         byte byteNumber = 0;
