@@ -29,9 +29,8 @@ public class CarTest {
         System.out.println(car1.getInfo());
         car1.stop();
         System.out.println(car1.getInfo());
-        
-        
-         car2.marka = "Mercedes";
+
+        car2.marka = "Mercedes";
         car2.model = "AMG";
         car2.years = "2";
         car2.distiance = 0;

@@ -16,7 +16,7 @@ public class BasicJava extends java.applet.Applet {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String... args) {
         // Değişken tanımlama
         int number1 = 23;
         int number2 = 44;
@@ -87,7 +87,7 @@ public class BasicJava extends java.applet.Applet {
         Hello nesne = new Hello();
         String cevap = nesne.selamSoyle("Ali");
         System.out.println(cevap);
-        
+
         /*
         Sabit ifadelerin değerleri run-time zamanında belirlenir!!
         
@@ -97,10 +97,7 @@ public class BasicJava extends java.applet.Applet {
         Bir dosya uzantısında birden fazla class olabilir, 
         en fazla 1 tane public class olabilir ve minimum 0 
         tane public class olabilir
-        */
-        
-        
-        
+         */
     }
 
 }

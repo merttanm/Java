@@ -36,6 +36,14 @@ public class CarTest {
         car2.kilometre = 20000;
         car2.bilgileri();
         System.out.println(car2.bilgileri());
+        System.out.println("***************");
+
+        CarModel tmp = car1;
+        car1 = car2;
+        car2 = tmp;
+        System.out.println("Car1:"+car1.bilgileri()+"\n");
+        System.out.println("Car2:"+car2.bilgileri()+"\n");
+        System.out.println("Tmp:"+tmp.bilgileri()+"\n");
     }
 
 }
