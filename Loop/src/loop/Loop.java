@@ -17,13 +17,13 @@ public class Loop {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static final void main(String[] myData) {
         // TODO code application logic here
         System.out.println("--------------- While ---------------");
         double number1 = Math.random();
         System.out.println("number1: " + number1);
 
-        while (number1 < 0.2) {
+        while (number1 < 0.9) {
             number1 = Math.random();
             System.out.println("in while: " + number1);
         }
