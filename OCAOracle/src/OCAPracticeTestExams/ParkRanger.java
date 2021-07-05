@@ -9,20 +9,11 @@ package OCAPracticeTestExams;
  *
  * @author MERT
  */
-public class CodeSnipped {
-
+public class ParkRanger {
+    static int bird=10;
     public static void main(String[] args) {
-    String tree = "pine";
-    int count = 0;
-
-    if (tree.equals ( 
-        "pine")) {
-            int height = 55;
-        count = count + 1;
-
+        int lion=23;
+        System.out.println(lion+ bird);
     }
-
-    System.out.print (count);
-}
-
+    
 }
