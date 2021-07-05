@@ -25,6 +25,7 @@ public class Loop {
 
         while (number1 < 0.9) {
             number1 = Math.random();
+        
             System.out.println("in while: " + number1);
         }
         System.out.println("After while");
