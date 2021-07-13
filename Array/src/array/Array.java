@@ -34,7 +34,7 @@ public class Array {
 
         Random r = new Random();
         int randomInt = Math.abs(r.nextInt());
-        int size = randomInt %10;
+        int size = randomInt % 10;
         System.out.println("Size is " + size);
         int[] intArray = new int[size];
 
@@ -71,29 +71,24 @@ public class Array {
 
         System.out.println("\n\n");
 
-        
         Array test = new Array();
         test.kopyala();
         test.arama(5);
-        
-        
+
     }
-    
-    
-    
-    public void kopyala(){
-    
-    int []kopyala=Arrays.copyOf(intArray, intArray.length);
-    print(kopyala);
+
+    public void kopyala() {
+
+        int[] kopyala = Arrays.copyOf(intArray, intArray.length);
+        print(kopyala);
     }
-    
-    public void arama(int key){
+
+    public void arama(int key) {
         System.out.println();
-    int index=Arrays.binarySearch(intArray,key );
-        System.out.println("sayı "+key+":"+index);
-    
+        int index = Arrays.binarySearch(intArray, key);
+        System.out.println("sayı " + key + ":" + index);
+
     }
-    
 
     public static void doldur() {
         Random random = new Random();
@@ -125,10 +120,10 @@ public class Array {
 
     private void print(int[] intArray) {
         for (int i = 0; i < 10; i++) {
-            System.out.print(intArray[i] + " ");    
-        } 
-        System.out.println("\nArray size: "+ intArray.length);
-        
+            System.out.print(intArray[i] + " ");
+        }
+        System.out.println("\nArray size: " + intArray.length);
+
     }
 
 }
