@@ -25,30 +25,16 @@ public class Arrays {
             int girilen = scn.nextInt();
             dizi.add(girilen);
         }
-        /*
-        for (int j = 0; j < 5; j++) {
-            for (int i = 0; i < j; i++) {
-                if (dizi[i] != dizi[j]) {
-                    System.out.print(dizi[i] + " ");
-                }
-            }
-        }*/
-        
+
         for (int i = 0; i < dizi.size(); i++) {
-            for (int j = 0; j <i; j++) {
-                if(dizi.get(i)==dizi.get(j)){
-                dizi.remove(i);
+            for (int j = 0; j < i; j++) {
+                if (dizi.get(i) == dizi.get(j)) {
+                    dizi.remove(i);
                 }
-                
+
             }
         }
         System.out.print(dizi);
-        /*
-        System.out.print("{");
-        for (int j = 0; j < 5; j++) {
-            System.out.print(dizi[j] + " ");
-        }
-        System.out.print("}");
-         */
+
     }
 }
