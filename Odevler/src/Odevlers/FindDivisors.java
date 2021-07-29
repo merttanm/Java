@@ -58,12 +58,11 @@ public class FindDivisors {
                     countNumber3++;
                     number = number / 2;
                     System.out.println(tuttugum + " = " + "2^" + countNumber2 + " * " + "3^" + countNumber3);
+                } else if (number % 5 == 0) {
+                    countNumber5++;
+                    number = number / 5;
+                    System.out.println(tuttugum + " = " + "2^" + countNumber2 + " * " + "3^" + countNumber3 + " * " + "5^" + countNumber5);
                 }
-                else if (number % 5 == 0) {
-                countNumber5++;
-                number = number / 5;
-                System.out.println(tuttugum + " = " + "2^" + countNumber2 + " * " + "3^" + countNumber3 + " * " + "5^" + countNumber5);
-            }
 
             } else if (number % 3 == 0) {
                 countNumber3++;
