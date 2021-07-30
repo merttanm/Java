@@ -21,19 +21,23 @@ public class StackTest {
         String girilen3= scn.next();
         String girilen4= scn.next();
         String girilen5= scn.next();
+        String girilen6= scn.next();
+        
         Stack stack = new Stack();
+        
         System.out.println(stack.push(girilen));
         System.out.println(stack.push(girilen2));
         System.out.println(stack.push(girilen3));
         System.out.println(stack.push(girilen4));
         System.out.println(stack.push(girilen5));
-       // System.out.println(stack.push(girilen6));
+        System.out.println(stack.push(girilen6));
         
+      /*  System.out.println(stack.pop());
         System.out.println(stack.pop());
         System.out.println(stack.pop());
-        System.out.println(stack.pop());
-        System.out.println(stack.pop());
+        System.out.println(stack.pop());*/
         
+        stack.showElements();
 
         
         

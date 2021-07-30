@@ -39,6 +39,7 @@ public class Stack {
         String lastItem = null;
         if (!empty) {
             lastItem = array[counter - 1];
+            array[counter - 1]=null;
             counter--;
             if (counter == 0) {
                 full = false;
@@ -54,6 +55,14 @@ public class Stack {
 
     public int getCapacity() {
         return maxStackSize;
+    }
+    public void showElements(){
+    
+        for (String s:array ) {
+            System.out.println("Array Eleman: "+s);
+        }
+    
+    
     }
 
 }
