@@ -16,6 +16,7 @@ public class Car {
     String years;
     int speed;
     int distiance;
+    Person owner;
 
     public double go(int newInstiance) {
 
@@ -33,7 +34,11 @@ public class Car {
     }
 
     public String getInfo() {
-        String getInfo = "Model:" + model + "   " + "Marka:" + marka + "   " + "Years:" + years + "   " + "Speed:" + speed + "   " + "Distiance:" + distiance + "   ";
+        String getInfo = "Marka:" + marka + "   " + "Model:" + model+ "   " + "Years:" + years + "   " + "Speed:" + speed + "   " + "Distiance:" + distiance + "   " ;
+        if (owner != null) {
+            getInfo += "Owner is " + "Firs Name:" + owner.firsName + "   " + "Last Name:" + owner.lastName ;
+
+        }
         return getInfo;
     }
 }
