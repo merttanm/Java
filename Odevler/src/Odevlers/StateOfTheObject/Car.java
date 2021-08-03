@@ -34,10 +34,12 @@ public class Car {
     }
 
     public String getInfo() {
-        String getInfo = "Marka:" + marka + "   " + "Model:" + model+ "   " + "Years:" + years + "   " + "Speed:" + speed + "   " + "Distiance:" + distiance + "   " ;
+        String getInfo = "Marka:" + marka + "   " + "Model:" + model + "   " + "Years:" + years + "   " + "Speed:" + speed + "   " + "Distiance:" + distiance + "   ";
         if (owner != null) {
-            getInfo += "Owner is " + "Firs Name:" + owner.firsName + "   " + "Last Name:" + owner.lastName ;
+            getInfo += "Owner is " + "Firs Name:" + owner.firsName + "   " + "Last Name:" + owner.lastName;
 
+        } else {
+            getInfo += " And it does not have an owner!";
         }
         return getInfo;
     }

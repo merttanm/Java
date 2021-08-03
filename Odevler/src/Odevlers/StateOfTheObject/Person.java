@@ -17,13 +17,13 @@ public class Person {
     Car vehicle;
 
     public String getInfo() {
-        String getInfo = "Tckn:" + tckn + "   " + "Firs Name:" + firsName + "   " + "Last Name:" + lastName + "   " ;
+        String getInfo = "Tckn:" + tckn + "   " + "Firs Name:" + firsName + "   " + "Last Name:" + lastName + "   ";
         if (vehicle != null) {
-            getInfo += "Owner Car " + "Marka:" + vehicle.marka + "   " + "Model:" + vehicle.model+ "   " + "Years:" + vehicle.years + "   " + "Speed:" + vehicle.speed + "   " + "Distiance:" + vehicle.distiance + "   " ;
+            getInfo += " and has a car: " + vehicle.getInfo();
+        } else {
+            getInfo += " and has no car.";
         }
-     
-            
-        
+
         return getInfo;
     }
 }
