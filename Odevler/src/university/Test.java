@@ -40,16 +40,11 @@ public class Test {
         courseC.teacher = professorP;
         courseC.teacher = new Professor();
         courseC.teacher = professorP;
-        
-        
-        System.out.println("Departmantdaki kurslar: "+ departmentD.courses[0].courseName);
-         System.out.println("Öğretim görevlilerine bağlı öğrenciler: "+ professorP.advisee[0].name);
-         System.out.println("Kursların departmanları: "+ courseC.department.departmentName);
-         System.out.println("Kursu veren profesör hoca: "+ courseC.teacher.name);
-         
-        
-        
-        
+
+        System.out.println("Departmantdaki kurslar: " + departmentD.courses[0].courseName);
+        System.out.println("Öğretim görevlilerine bağlı öğrenciler: " + professorP.advisee[0].name);
+        System.out.println("Kursların departmanları: " + courseC.department.departmentName);
+        System.out.println("Kursu veren profesör hoca: " + courseC.teacher.name);
 
     }
 
