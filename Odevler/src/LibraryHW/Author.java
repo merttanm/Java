@@ -3,7 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Library;
+package LibraryHW;
+
+import LibraryHW.Book;
 
 /**
  *
@@ -13,6 +15,7 @@ public class Author {
 
     String authorName;
     String authorSurname;
-    Book book;
+    Book bookName;
+    Reader name;
 
 }

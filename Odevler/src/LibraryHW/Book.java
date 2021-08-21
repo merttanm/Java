@@ -3,15 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Library;
+package LibraryHW;
+
+import Library.Author;
 
 /**
  *
  * @author MERT
  */
-public class Reader {
-
-    String name;
-    Book bookName;
-
+public class Book {
+    
+    String bookName;
+    int bookPage;
+    String bookType;
+    Author authorName;
+    
+    
 }

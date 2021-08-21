@@ -5,6 +5,8 @@
  */
 package Library;
 
+import LibraryHW.Author;
+
 /**
  *
  * @author MERT

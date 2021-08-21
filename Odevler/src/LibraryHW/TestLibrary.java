@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Library;
+package LibraryHW;
 
 /**
  *
  * @author MERT
  */
-public class Test {
+public class TestLibrary {
 
     public static void main(String[] args) {
 
@@ -18,24 +18,24 @@ public class Test {
         authorR.authorSurname="Lİvaneli";
         
         
-        Book book= new Book();
-        book.bookName="Seranad";
-        book.bookPage=123;
-        book.bookType="make a cover";
+        Book bookK= new Book();
+        bookK.bookName="Seranad";
+        bookK.bookPage=123;
+        bookK.bookType="make a cover";
         
         Reader readerR= new Reader();
         readerR.name="Jale";
         
-        authorR.book=book;
-        authorR.book= new Book();
-        authorR.book=book;
+        authorR.bookName=bookK;
+        authorR.bookName= new Book();
+        authorR.bookName=bookK;
         
-        readerR.bookName=book;
+        readerR.bookName=bookK;
         readerR.bookName= new Book();
-        readerR.bookName=book;
+        readerR.bookName=bookK;
         
         
-        System.out.println("Yazarın kitab bilgileri: " +" | "+authorR.book.bookName +" | "+authorR.book.bookType+" | "+authorR.book.bookPage);
+        System.out.println("Yazarın kitab bilgileri: " +" | "+authorR.bookName.bookName +" | "+authorR.bookName.bookType+" | "+authorR.bookName.bookPage);
         
         System.out.println("Okuyucunun aldığı kitap bilgileri: " +" | "+readerR.bookName.bookName );
 

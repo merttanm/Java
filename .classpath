@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="AdvancedClassAndObject/src"/>
+	<classpathentry kind="src" path="Array/src"/>
+	<classpathentry kind="src" path="BasicJava/src"/>
+	<classpathentry kind="src" path="CodilityCase/src"/>
+	<classpathentry kind="src" path="Design-Patterns/src"/>
+	<classpathentry kind="src" path="DesignPatterns/src"/>
+	<classpathentry kind="src" path="DesignPolicies/src"/>
+	<classpathentry kind="src" path="FootballPlayer/src"/>
+	<classpathentry kind="src" path="FootballPlayerTest/src"/>
+	<classpathentry kind="src" path="HaftasonuCalismasi/src/main/java"/>
+	<classpathentry kind="src" path="HW1/src/main/java"/>
+	<classpathentry kind="src" path="HW2/src"/>
+	<classpathentry kind="src" path="LiskovSubstitutionPrinciple/src"/>
+	<classpathentry kind="src" path="Loop/src"/>
+	<classpathentry kind="src" path="Loosecoupling/src"/>
+	<classpathentry kind="src" path="LooseCouplingCalculateExample/src"/>
+	<classpathentry kind="src" path="mavenproject1/src/main/java"/>
+	<classpathentry kind="src" path="mavenproject1/src/test/java"/>
+	<classpathentry kind="src" path="MicroconrollerSerialPort/src"/>
+	<classpathentry kind="src" path="OCAOracle/src"/>
+	<classpathentry kind="src" path="Odevler/src"/>
+	<classpathentry kind="src" path="OOP/src"/>
+	<classpathentry kind="src" path="Operators/src"/>
+	<classpathentry kind="src" path="TCPClient/src/main/java"/>
+	<classpathentry kind="src" path="TCPServer/src/main/java"/>
+	<classpathentry kind="src" path="VariableAndType/src"/>
+	<classpathentry kind="output" path="AdvancedClassAndObject/build/classes"/>
+</classpath>
