@@ -12,20 +12,20 @@ package Point;
 public class Point {
 
     double x, y;
+    Point uzaklık;
 
-
-    /*public int uzaklık(Point point){
-        
-    
-    }
-     */
     public double uzaklık(double x, double y) {
        double uzaklık=(double) (Math.sqrt(( x*x )+(y*y)));
        return uzaklık;
     }
     
-    public void hesaplama(){
-
+    public void klon(){
+        Point p= new Point();
+        for (int i = 0; i < 10; i++) {
+            double uzaklık=(double) p.uzaklık.x ;
+            System.out.println("Uzaklık" +uzaklık+ " --- "+i+". Çağrılma Sayısı");
+        }
+        
     }  
 
 }

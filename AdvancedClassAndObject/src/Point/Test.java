@@ -15,6 +15,7 @@ public class Test {
         Point p= new Point();
         double orjineUzaklık= p.uzaklık(2, 1);
         System.out.println(""+orjineUzaklık);
+        p.klon();
         
     }
     
