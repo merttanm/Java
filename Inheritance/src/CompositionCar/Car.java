@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package composition;
+package CompositionCar;
 
 /**
  *
@@ -18,7 +18,7 @@ public class Car {
     private int distance;
     private int doorCount;
 
-    private Wheel[] weel = new Wheel[10];
+    private Wheel[] wheel = new Wheel[10];
     private Door[] doors;
     private Engine engine;
     private Transmission transmission;
@@ -43,10 +43,10 @@ public class Car {
         doors[0] = new Door("Left-front");
         doors[1] = new Door("Right-front");
 
-        weel[0] = new Wheel("Sağ ön kapı");
-        weel[1] = new Wheel("Sağ arkakapı");
-        weel[2] = new Wheel("Sol ön kapı");
-        weel[3] = new Wheel("Sol arkakapı");
+        wheel[0] = new Wheel("Sağ ön teker");
+        wheel[1] = new Wheel("Sağ arka teker");
+        wheel[2] = new Wheel("Sol ön teker");
+        wheel[3] = new Wheel("Sol arka teker");
 
         System.out.println("Araba:  " + make + " " + model + ", " + year + " bulunuyor.\n");
     }
