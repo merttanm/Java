@@ -32,7 +32,7 @@ public class Bike {
     }
     
     public String getInfo() {
-        return   "Marka: " + make  + "Renk: " + color +" Jant" + jant+ pedal.toString().charAt(0)+pedal.toString().charAt(2);
+        return   "Marka: " + make  + "Renk: " + color +" Jant";
     }
 
 }
