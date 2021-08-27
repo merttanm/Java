@@ -9,14 +9,13 @@ package CompositionBike;
  *
  * @author MERT
  */
-public class Saddle {
-    
-   private String Type;
+public class Test {
 
-    public Saddle(String Type) {
-        this.Type = Type;
-        System.out.println("Sele tipi oluşturuluyor .... ");
-        System.out.println( "Sele tipi: "+ Type);
+    public static void main(String[] args) {
+        
+        Bike bike = new Bike("Salcano", "Blue", 26);
+        System.out.println(bike.getInfo());
+        
     }
-    
+
 }

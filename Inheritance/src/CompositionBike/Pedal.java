@@ -11,4 +11,14 @@ package CompositionBike;
  */
 public class Pedal {
     
+    private String price;
+    private String color;
+
+    public Pedal(String price, String color) {
+        this.price = price;
+        this.color = color;
+        System.out.println("Pedalın markası ve rengi oluşturuluyor .... ");
+        System.out.println("Markası: " + price+ " "+ "Renk: "+ color);
+    }
+    
 }

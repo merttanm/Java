@@ -10,5 +10,17 @@ package CompositionBike;
  * @author MERT
  */
 public class Wheel {
-    
+  private String name;
+
+    public Wheel(String name) {
+        this.name = name;
+        
+        System.out.println("Lastik: "+name);
+        
+    }
+
+    public void rotate() {
+        System.out.println("Whell is Rotate....");
+    }
+
 }

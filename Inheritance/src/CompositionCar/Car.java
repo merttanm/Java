@@ -54,6 +54,10 @@ public class Car {
     public void start() {
 		engine.engineStart();
 	}
+    
+    public void stop() {
+		engine.engineStop();
+	}
 
 
     public String getInfo() {

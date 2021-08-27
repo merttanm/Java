@@ -17,6 +17,8 @@ public class Engine {
     public Engine(int cc, int horsePower) {
         this.cc = cc;
         this.horsePower = horsePower;
+        
+        System.out.println("CC:" +cc+ " " +"Horse Power: "+horsePower);
     }
     
     public void engineStart(){
