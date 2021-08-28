@@ -1,3 +1,5 @@
+package example;
+
 
 import java.util.Collections;
 import java.util.List;
@@ -12,15 +14,14 @@ import model.Car;
  *
  * @author MERT
  */
-public class RemoveEmptyChassisAlgorithm implements FixEmptyChassis {
+public class BetterWayToRemoveEmptyChassis implements FixEmptyChassis {
 
     public List<Car> removeEmptyChassis(List<Car> cars) {
-
         Collections.sort(cars);
-
-        for (int i = 0; i < cars.size(); i++) {
-            cars.get(i).setChassis(i);
-
+        int i = 0;
+        for (Car car : cars) {
+           car.setChassis(i++);
+            
         }
         return cars;
     }
