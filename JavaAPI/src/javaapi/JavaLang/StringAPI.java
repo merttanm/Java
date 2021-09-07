@@ -20,7 +20,8 @@ public class StringAPI {
         String compareToObject = "Selamın Aleyküm";
         char kelimeTest[] = new char[10]; //GetChars[] 
         kelime.getChars(0, 10, kelimeTest, 0); // İlk parametre kopyalanacak 1. karakter 2. parametre kopyalanacak son karakter 3. parametre array son parametre arrayin başlangıç değeri
-
+        String kelime2="mert";
+        
         System.out.println(kelime);
         System.out.println("Kelimenin uzunluğu: " + kelime.length());
         System.out.println("1. index: " + kelime.charAt(1));
@@ -39,6 +40,14 @@ public class StringAPI {
         while (kelimeTolken.hasMoreElements()) {
             System.out.println(kelimeTolken.nextToken());
         }
+        
+        System.out.println(kelime.startsWith("S")); //ilk karakterin doğruluğunu true/false döndürür
+        System.out.println(kelime.endsWith("m"));//son karakterin doğruluğunu true/false döndürür
+        System.out.println("Sonuna Concat ekleme yapılırsa: "+kelime.concat("aaaa")); 
+        System.out.println(kelime.repeat(3)); // tekrar ediyor
+        System.out.println(kelime.isBlank());
+        
+        
        
 
     }
