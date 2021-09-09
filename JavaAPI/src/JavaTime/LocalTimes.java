@@ -4,29 +4,38 @@
  * and open the template in the editor.
  */
 package JavaTime;
+
 import java.time.LocalTime;
+import java.util.Date;
 
 /**
  *
  * @author merttan
  */
 public class LocalTimes {
-    
+
     public static void main(String[] args) throws InterruptedException {
+
+        LocalTime time = LocalTime.now();
+        System.out.println("Zaman: " + time);
+        System.out.println("Saat: " + time.getHour());
+        System.out.println("Dakika: " + time.getMinute());
+        System.out.println("Saniye: " + time.getSecond());
+        System.out.println("Nanosaniye: " + time.getNano());
+
+        Thread.sleep(4000);
+        LocalTime time2 = LocalTime.now();
+        System.out.println("4 saniye sonra " + time2);
+
+        LocalTime timeMax = LocalTime.MAX;
+        System.out.println(timeMax);
+        LocalTime timeMin = LocalTime.MIN;
+        System.out.println(timeMin);
+        LocalTime timeMıdnıght = LocalTime.MIDNIGHT;
+        System.out.println(timeMıdnıght);
+
         
-       LocalTime time= LocalTime.now();
-       System.out.println("Zaman: "+ time);
-       System.out.println("Saat: "+ time.getHour());
-       System.out.println("Dakika: "+ time.getMinute()); 
-       System.out.println("Saniye: "+ time.getSecond());
-       System.out.println("Nanosaniye: "+ time.getNano());
-       
-       Thread.sleep(4000);
-       LocalTime time2= LocalTime.now();
-       System.out.println("4 saniye sonra " +time2);
-       
-       
-        
+
     }
-    
+
 }
