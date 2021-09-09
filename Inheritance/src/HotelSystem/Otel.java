@@ -28,6 +28,10 @@ public class Otel {
     public void printInfo() {
         System.out.println("Otel Adı: " + otelAdı);
         System.out.println("Vergi Kimlik No:" + vergino);
+        OdaTipi tp1 = OdaTipi.Kral;
+        OdaTipi tp2 = OdaTipi.Standart;
+        OdaTipi tp3 = OdaTipi.Suit;
+        System.out.println("Oda Tipler: "+tp1 + "  "+ tp2+"  "+ tp3);
         for (int i = 0; i < personel.size(); i++) {
             System.out.println("Personel: " + personel.get(i).print());
         }

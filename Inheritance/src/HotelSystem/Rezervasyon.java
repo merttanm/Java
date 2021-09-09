@@ -21,6 +21,7 @@ public class Rezervasyon {
         this.musteri = musteri;
         this.otel = otel;
         this.rezervasyonYılı = rezervasyonYılı;
+        
 
         if (otel == null && musteri == null) {
             System.out.println("Böyle bir otel yada müşteri yok");
