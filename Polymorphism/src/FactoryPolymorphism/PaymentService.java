@@ -14,7 +14,7 @@ public class PaymentService {
     public void paySalary(Employee employee) {
         // Manager ve Director, Employee sınıfından miras aldığı için hepsi bir Employeedir
         double salary = employee.calculateSalary();
-        //System.out.println("Maaş: "+salary);
+        System.out.println("Maaş: "+salary);
 
     }
 
