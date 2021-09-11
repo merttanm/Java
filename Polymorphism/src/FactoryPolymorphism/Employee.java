@@ -26,6 +26,7 @@ public class Employee {
         getInfo();
     }
 
+
     public double calculateSalary() {
         double maas = SALARY * years;
         return maas;
