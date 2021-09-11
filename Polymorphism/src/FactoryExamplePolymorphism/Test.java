@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package FactoryPolymorphism;
+package FactoryExamplePolymorphism;
 
 import java.util.Random;
 
@@ -59,8 +59,12 @@ public class Test {
         Employee e3 = new Director(randm, "Yönetim kurulu başkanı", 3, 2, "Ayşe", "Sar");
 
         //Director d3 = new Employee(5, 2, "Melih", "Sakar"); //Compailer error hatası verir downcast ister 
+        
         //Director d3 = (Director) new Employee(5, 2, "Melih", "Sakar");  //   java.lang.ClassCastException
         // Director d3 downcast edilirse de runtime zamanda java.lang.ClassCastException hatası verir
+        
+         
+        
     }
 
 }

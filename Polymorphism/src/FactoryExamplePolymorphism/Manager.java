@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package FactoryPolymorphism;
+package FactoryExamplePolymorphism;
 
-import static FactoryPolymorphism.Employee.SALARY;
+import static FactoryExamplePolymorphism.Employee.SALARY;
 
 /**
  *
