@@ -11,7 +11,15 @@ package operators;
  */
 public class TernaryOperator {
     
-    void trncagır(){
+    public static void main(String args[]) {
+		trncagır();
+//		ifElseEquivalnce();
+//		evaluation();
+//		hard();
+//		errors();
+	}
+    
+    public static void trncagır(){
     
         int i=13;
         int j=76;
