@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AbstractHW;
+package InterfaceHW;
 
 
 import java.util.Date;
@@ -12,10 +12,13 @@ import java.util.Date;
  *
  * @author merttan
  */
-public class MasterStudent extends GraduateStudent {
-    
-    public MasterStudent(String advisir, String thesis, int no, String name, String year, String date, String major) {
+public class PhdStudent extends GraduateStudent {
+
+    boolean qulityingExamToken;
+
+    public PhdStudent(boolean qulityingExamToken, String advisir, String thesis, int no, String name, String year, String date, String major) {
         super(advisir, thesis, no, name, year, date, major);
+        this.qulityingExamToken = qulityingExamToken;
     }
 
     @Override
@@ -28,9 +31,18 @@ public class MasterStudent extends GraduateStudent {
         super.writeTheSis(); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
+    //@Override
     public void register() {
         super.register(); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Öğrenci yeterlilik durumu: "+ qulityingExamToken);
+        
+        if(qulityingExamToken ==true){
+        
+            System.out.println("NOT: Öğnreci doktora yapma onayı alabilir.");
+        }
+        else
+            System.out.println("NOT: Öğnreci doktora yapma onayı alamaz.");
+
     }
 
     @Override
@@ -42,7 +54,5 @@ public class MasterStudent extends GraduateStudent {
     public String toString() {
         return super.toString(); //To change body of generated methods, choose Tools | Templates.
     }
-    
-    
-    
+
 }

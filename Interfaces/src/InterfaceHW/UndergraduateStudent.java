@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AbstractHW;
+package InterfaceHW;
 
 
 import java.util.Date;
@@ -12,7 +12,7 @@ import java.util.Date;
  *
  * @author merttan
  */
-public class UndergraduateStudent extends Student {
+public class UndergraduateStudent extends AbstractStudent {
 
     String minor;
 

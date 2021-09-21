@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AbstractHW;
+package InterfaceHW;
 
 
 import java.util.Date;
@@ -12,7 +12,7 @@ import java.util.Date;
  *
  * @author merttan
  */
-abstract class Student {
+abstract class AbstractStudent implements Student {
 
     int no;
     String name;
@@ -20,7 +20,7 @@ abstract class Student {
     String date;
     String major;
 
-    public Student(int no, String name, String year, String date, String major) {
+    public AbstractStudent(int no, String name, String year, String date, String major) {
         this.no = no;
         this.name = name;
         this.year = year;

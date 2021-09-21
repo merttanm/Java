@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AbstractHW;
+package InterfaceHW;
 
 
 import java.lang.reflect.Array;
@@ -14,14 +14,14 @@ import java.lang.reflect.Array;
  */
 public class RegistationStudent {
 
-     public Student getaStudent() {
+     public AbstractStudent getaStudent() {
          
-         Student s=null;
+         AbstractStudent s=null;
          
          return s;
                 
     }
-    public void registerStudent(Student s) {
+    public void registerStudent(AbstractStudent s) {
 
         /*String[] register= new String[10];
          

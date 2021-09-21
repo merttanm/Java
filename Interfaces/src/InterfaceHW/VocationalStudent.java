@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AbstractHW;
+package InterfaceHW;
 
 
 import java.util.Date;
@@ -12,13 +12,10 @@ import java.util.Date;
  *
  * @author merttan
  */
-public class UndergraduateStudent extends Student {
+public class VocationalStudent extends AbstractStudent {
 
-    String minor;
-
-    public UndergraduateStudent(String minor, int no, String name, String year, String date, String major) {
+    public VocationalStudent(int no, String name, String year, String date, String major) {
         super(no, name, year, date, major);
-        this.minor = minor;
     }
 
     @Override
@@ -32,6 +29,8 @@ public class UndergraduateStudent extends Student {
     @Override
     public String toString() {
         return super.toString(); //To change body of generated methods, choose Tools | Templates.
+
+        
     }
 
 }
