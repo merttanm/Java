@@ -3,17 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Library;
-
+package AnonymousClass;
 
 /**
  *
- * @author MERT
+ * @author merttan
  */
-public class Author {
-
-    String authorName;
-    String authorSurname;
-    Book book;
-
+public interface DoerInterface {
+    
+    void doIt();
+    void doThat();
+    
 }

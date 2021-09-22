@@ -5,10 +5,6 @@
  */
 package Library;
 
-import LibraryHW.Author;
-import LibraryHW.Book;
-import LibraryHW.Reader;
-
 /**
  *
  * @author MERT
