@@ -17,7 +17,7 @@ public class ThrowExample {
             t.throwablenow();
         } catch (Throwable e) {
             System.out.println("Throwable cathing");
-
+         
         }
     }
 

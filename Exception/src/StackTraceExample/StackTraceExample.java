@@ -15,7 +15,7 @@ public class StackTraceExample {
 
         StackTraceExample stx = new StackTraceExample();
         stx.doIt();
-
+        
         /*
         try {
             stx.doIt();
