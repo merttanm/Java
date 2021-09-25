@@ -13,6 +13,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
+import static java.lang.System.in;
 import static java.lang.System.out;
 import java.util.Scanner;
 import java.util.logging.Level;
@@ -20,7 +21,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author merttan
+ * @author merttan /Users/merttan/Desktop/m.txt
  */
 public class ExceptionExample1 {
 
@@ -32,6 +33,7 @@ public class ExceptionExample1 {
 
         //openFile(path);
         openAndCloseFile(path);
+ 
 
     }
 
