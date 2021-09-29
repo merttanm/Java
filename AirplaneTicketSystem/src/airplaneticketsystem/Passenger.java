@@ -9,19 +9,16 @@ package airplaneticketsystem;
  *
  * @author merttan
  */
-public class Passenger extends Employee {
-    
+public class Passenger extends Employee  {
+
+
     public Passenger(int id, String name, String surname, int TCKN) {
         super(id, name, surname, TCKN);
     }
 
     @Override
     public void getInfo() {
-      super.getInfo(); //To change body of generated methods, choose Tools | Templates.
+        super.getInfo(); //To change body of generated methods, choose Tools | Templates.
     }
 
-  
-    
-    
-    
 }

@@ -25,7 +25,7 @@ public class Employee {
 
     public void getInfo() {
 
-        String getInfo = "Adı:" + name + "\nSoyadı:" + surname + "\nTC Kimlik no:" + TCKN + "\nKullanıcı ID:" + id;
+        String getInfo = "Adı:  " + name + "\nSoyadı:   " + surname + "\nTC Kimlik no:  " + TCKN + "\nKullanıcı ID: " + id;
         System.out.println(getInfo);
 
     }

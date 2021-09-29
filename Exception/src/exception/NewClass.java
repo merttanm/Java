@@ -3,14 +3,18 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package airplaneticketsystem;
+package exception;
 
 /**
  *
  * @author merttan
  */
-interface ReservasionUtil {
+public class NewClass {
     
-    void customersWithReservations();
-      
+    static int valueof;
+    public static void main(String[] args) {
+        System.out.println(valueof);
+        
+    }
+    
 }

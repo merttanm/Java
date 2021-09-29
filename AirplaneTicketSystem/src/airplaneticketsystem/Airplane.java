@@ -24,8 +24,8 @@ public class Airplane {
     public void getInfo() {
 
         String getInfo
-                = "Airplane Model: " + airplaneModel + "\nPassenger Capacity:" + passengerCapacity
-                + "\nAirplane Id:" + airplaneId;
+                = "Airplane Model:  " + airplaneModel + "\nPassenger Capacity:  " + passengerCapacity
+                + "\nAirplane Id:   " + airplaneId;
         System.out.println(getInfo);
     }
 

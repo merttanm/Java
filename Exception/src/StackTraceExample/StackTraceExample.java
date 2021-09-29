@@ -15,14 +15,6 @@ public class StackTraceExample {
 
         StackTraceExample stx = new StackTraceExample();
         stx.doIt();
-        
-        /*
-        try {
-            stx.doIt();
-        } catch (Throwable e) {
-            System.out.println("asd");
-        }
-         */
     }
 
     public void doIt() {
@@ -44,7 +36,7 @@ public class StackTraceExample {
             System.out.println("Module name:    " + trace.getModuleName());
             System.out.println("Method name:    " + trace.getMethodName());
             System.out.println("Module version: " + trace.getModuleVersion());
-            System.out.println("Line number:    "+trace.getLineNumber());
+            System.out.println("Line number:    " + trace.getLineNumber());
         }
         System.out.println();
     }

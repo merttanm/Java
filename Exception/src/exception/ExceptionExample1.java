@@ -31,9 +31,8 @@ public class ExceptionExample1 {
 
         String path = read("Dosya uzantısını giriniz");
 
-        //openFile(path);
-        openAndCloseFile(path);
- 
+        openFile(path);
+        //openAndCloseFile(path);
 
     }
 
@@ -47,7 +46,8 @@ public class ExceptionExample1 {
             System.out.println("Close file");
 
         } catch (FileNotFoundException e) {
-            System.out.println("FileNotFoundException");
+            System.out.println("FileNotFoundException hatası aldınız..");
+            e.printStackTrace();
         }
 
     }
@@ -66,9 +66,13 @@ public class ExceptionExample1 {
             System.out.println("Close file");
 
         } catch (FileNotFoundException e) {
-            System.out.println("FileNotFoundException");
+            System.out.println("FileNotFoundException hatası aldınız..");
+            e.printStackTrace();
+
         } catch (IOException e) {
-            System.out.println("IOException");
+            System.out.println("IOException hatası aldınız..");
+            e.printStackTrace();
+
         }
 
     }
