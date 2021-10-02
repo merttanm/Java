@@ -9,7 +9,7 @@ package airplaneticketsystem;
  *
  * @author merttan
  */
-public class Passenger extends Employee  {
+public class Passenger extends Person  {
 
 
     public Passenger(int id, String name, String surname, int TCKN) {

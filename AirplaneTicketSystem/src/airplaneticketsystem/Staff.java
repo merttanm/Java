@@ -5,19 +5,13 @@
  */
 package airplaneticketsystem;
 
+import java.util.*;
+
 /**
  *
  * @author merttan
  */
-public class Employee extends Person{
+public class Staff {
     
-    final int employeeId;
-
-    public Employee(int employeeId, int id, String name, String surname, int TCKN) {
-        super(id, name, surname, TCKN);
-        this.employeeId = employeeId;
-    }
-        
   
-    
 }

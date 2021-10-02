@@ -35,7 +35,7 @@ public class AirplaneTicketSystem {
             System.out.print("Uçak modeli giriniz: ");
             Object airplnName = read(airplaneModel);
             Company c = new Company(1, (String) cmpName, 1000, 450, (String) airplnName);
-            c.getInfo();
+            c.getAirplan();
         } catch (NullPointerException e) {
             e.printStackTrace();
         }
@@ -43,16 +43,20 @@ public class AirplaneTicketSystem {
     }
 
     public static void cratingPassenger() {
-        String passengerName = null;
-        String passengerSurname = null;
+        try {
+            String passengerName = null;
+            String passengerSurname = null;
 
-        System.out.println("----- Passenger ----- ");
-        System.out.print("Yolcu ismi giriniz: ");
-        Object psngeName = read(passengerName);
-        System.out.print("Yolcu soyismi giriniz: ");
-        Object psngeSurname = read(passengerSurname);
-        Passenger p = new Passenger(1, "Ali", "Demir", 467);
-        p.getInfo();
+            System.out.println("----- Passenger ----- ");
+            System.out.print("Yolcu ismi giriniz: ");
+            Object psngeName = read(passengerName);
+            System.out.print("Yolcu soyismi giriniz: ");
+            Object psngeSurname = read(passengerSurname);
+            Passenger p = new Passenger(1, (String) psngeName, (String) psngeSurname, 467);
+            p.getInfo();
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
 
     }
 
