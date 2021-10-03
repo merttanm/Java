@@ -11,7 +11,13 @@ import java.util.*;
  *
  * @author merttan
  */
-public class Staff {
+public class Staff extends Employee{
+
+    public Staff(int employeeId, int id, String name, String surname, int TCKN) {
+        super(employeeId, id, name, surname, TCKN);
+    }
+    
+    
     
   
 }

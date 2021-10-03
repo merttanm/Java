@@ -3,14 +3,16 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package airplaneticketsystem.Util;
+package airplaneticketsystem;
 
 /**
  *
  * @author merttan
  */
-interface ReservasionUtil {
-    
-    public void addReservasion();
-      
+abstract class Ticket {
+
+    public int ticketId;
+    public int passengerId;
+    public int seatNumber;
+
 }

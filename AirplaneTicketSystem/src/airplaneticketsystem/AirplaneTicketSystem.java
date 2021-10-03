@@ -5,6 +5,7 @@
  */
 package airplaneticketsystem;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -17,11 +18,13 @@ public class AirplaneTicketSystem {
      * @param args the command line arguments
      */
     static Scanner scanner;
+    static ArrayList <String>listCompanys = new ArrayList<String>();
 
     public static void main(String[] args) {
 
         cratingCompany();
         cratingPassenger();
+        System.out.println(listCompanys);
 
     }
 
@@ -34,8 +37,15 @@ public class AirplaneTicketSystem {
             Object cmpName = read(companyName);
             System.out.print("Uçak modeli giriniz: ");
             Object airplnName = read(airplaneModel);
-            Company c = new Company(1, (String) cmpName, 1000, 450, (String) airplnName);
-            c.getAirplan();
+            CompanyAirline c = new CompanyAirline(1, (String) cmpName, 1000, 450, (String) airplnName);
+
+            CompanyAirline b = new CompanyAirline(2, "as", 1000, 450, "as");
+           listCompanys.add(b.companyName);
+           listCompanys.add(c.companyName);
+            c.getInfo();
+            b.getInfo();
+
+            //  c.listCompany();
         } catch (NullPointerException e) {
             e.printStackTrace();
         }
@@ -58,6 +68,9 @@ public class AirplaneTicketSystem {
             e.printStackTrace();
         }
 
+    }
+
+    public static void listCompany() {
     }
 
     public static Object read(String prmp) {

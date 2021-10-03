@@ -9,21 +9,23 @@ package airplaneticketsystem;
  *
  * @author merttan
  */
-public class Pilot extends Person{
+public class Pilot extends Employee{
 
-    int licanceId;
+    private int licanceId;
 
-    public Pilot(int licanceId, int id, String name, String surname, int TCKN) {
-        super(id, name, surname, TCKN);
-        this.licanceId = licanceId;
+    public Pilot(int employeeId, int id, String name, String surname, int TCKN) {
+        super(employeeId, id, name, surname, TCKN);
     }
-        public int getLicanceId() {
+
+    public int getLicanceId() {
         return licanceId;
     }
 
     public void setLicanceId(int licanceId) {
         this.licanceId = licanceId;
     }
+
+    
 
     
 

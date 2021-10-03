@@ -20,5 +20,7 @@ public class Passenger extends Person  {
     public void getInfo() {
         super.getInfo(); //To change body of generated methods, choose Tools | Templates.
     }
+    
+    public void bookFight(){}
 
 }

@@ -5,13 +5,13 @@
  */
 package airplaneticketsystem;
 
-import airplaneticketsystem.Util.AirplanUtil;
+
 
 /**
  *
  * @author merttan
  */
-public class Airplane implements AirplanUtil {
+public class Airplane  {
 
     int airplaneId;
     int passengerCapacity;
@@ -23,7 +23,7 @@ public class Airplane implements AirplanUtil {
         this.airplaneModel = airplaneModel;
     }
 
-    /*
+    
     public void getInfo() {
 
         String getInfo
@@ -31,13 +31,13 @@ public class Airplane implements AirplanUtil {
                 + "\nAirplane Id:   " + airplaneId;
         System.out.println(getInfo);
     }
-     */
-    @Override
+     
+    /*@Override
     public void getAirplan() {
         String getInfo
                 = "Airplane Model:  " + airplaneModel + "\nPassenger Capacity:  " + passengerCapacity
                 + "\nAirplane Id:   " + airplaneId;
         System.out.println(getInfo);
-    }
+    }*/
 
 }
