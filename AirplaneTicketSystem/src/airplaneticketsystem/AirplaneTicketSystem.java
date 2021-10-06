@@ -18,13 +18,13 @@ public class AirplaneTicketSystem {
      * @param args the command line arguments
      */
     static Scanner scanner;
-    static ArrayList <String>listCompanys = new ArrayList<String>();
+    static ArrayList<String> listCompanys = new ArrayList<String>();
 
     public static void main(String[] args) {
 
         cratingCompany();
         cratingPassenger();
-        System.out.println(listCompanys);
+        System.out.println("Havayolu şirket listeleri:" + listCompanys);
 
     }
 
@@ -38,12 +38,12 @@ public class AirplaneTicketSystem {
             System.out.print("Uçak modeli giriniz: ");
             Object airplnName = read(airplaneModel);
             CompanyAirline c = new CompanyAirline(1, (String) cmpName, 1000, 450, (String) airplnName);
+            CompanyAirline b = new CompanyAirline(2, "THY", 1000, 450, "AİRBUS-750");
 
-            CompanyAirline b = new CompanyAirline(2, "as", 1000, 450, "as");
-           listCompanys.add(b.companyName);
-           listCompanys.add(c.companyName);
             c.getInfo();
+            listCompanys.add(c.companyName);
             b.getInfo();
+            listCompanys.add(b.companyName);
 
             //  c.listCompany();
         } catch (NullPointerException e) {

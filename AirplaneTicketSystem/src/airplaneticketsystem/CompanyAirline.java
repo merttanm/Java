@@ -17,24 +17,24 @@ public class CompanyAirline extends Airplane {
     String companyName;
 
     int companyCount = 0;
-    ArrayList <String>listCompanys = new ArrayList<String>();
+    ArrayList<String> listCompanys = new ArrayList<String>();
 
     public CompanyAirline(int companyID, String companyName, int airplaneId, int passengerCapacity, String airplaneModel) {
         super(airplaneId, passengerCapacity, airplaneModel);
         this.companyID = companyID;
         this.companyName = companyName;
         //listCompanys.add(this.companyName);
-     
+
     }
-  
+
     @Override
     public void getInfo() {
         super.getInfo(); //To change body of generated methods, choose Tools | Templates.
         System.out.println("Havayolu şirketi: " + companyName + "\nHavayolu şirket Id:" + companyID);
-       //listCompany();
+        //listCompany();
     }
-     
-   /* public void addCompany() {
+
+    /* public void addCompany() {
       /*  listCompanys[companyCount] = listCompany;
         companyCount++;
             listCompanys.add(companyName);
@@ -45,5 +45,5 @@ public class CompanyAirline extends Airplane {
         System.out.println("Havayolu şirket listeleri:"+listCompanys);
         
     }
-*/
+     */
 }
