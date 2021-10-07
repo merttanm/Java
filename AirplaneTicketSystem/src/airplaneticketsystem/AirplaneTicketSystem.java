@@ -6,6 +6,7 @@
 package airplaneticketsystem;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -19,12 +20,14 @@ public class AirplaneTicketSystem {
      */
     static Scanner scanner;
     static ArrayList<String> listCompanys = new ArrayList<String>();
+    // static ArrayList<CompanyAirline> listCompanys;
 
     public static void main(String[] args) {
 
         cratingCompany();
         cratingPassenger();
-        System.out.println("Havayolu şirket listeleri:" + listCompanys);
+        // System.out.println("Havayolu şirket listeleri:" + listCompanys);
+        printCompany(listCompanys);
 
     }
 
@@ -45,11 +48,26 @@ public class AirplaneTicketSystem {
             b.getInfo();
             listCompanys.add(b.companyName);
 
+            /*
+            listCompanys = new ArrayList<>();
+            listCompanys.add(new CompanyAirline(2, "THY", 1000, 450, "AİRBUS-750"));
+            
+            for(CompanyAirline l: listCompanys){
+            
+                System.out.println(l);
+            }*/
             //  c.listCompany();
         } catch (NullPointerException e) {
             e.printStackTrace();
         }
 
+    }
+
+    public static void printCompany(List<String> List) {
+
+        System.out.println("----------------");
+        System.out.print("Havayolu şirket listeleri:");
+        List.forEach(i -> System.out.println(i));
     }
 
     public static void cratingPassenger() {
