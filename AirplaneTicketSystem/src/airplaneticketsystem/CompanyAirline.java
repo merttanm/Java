@@ -13,8 +13,8 @@ import java.util.ArrayList;
  */
 public class CompanyAirline extends Airplane {
 
-    int companyID;
-    String companyName;
+    private final int companyID;
+    final String companyName;
 
     int companyCount = 0;
     ArrayList<String> listCompanys = new ArrayList<String>();

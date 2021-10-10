@@ -11,10 +11,10 @@ package airplaneticketsystem;
  */
 public class Person {
 
-    private int id;
+    private final int id;
     private String name;
     private String surname;
-    private int TCKN;
+    private  final  int TCKN;
 
     public Person(int id, String name, String surname, int TCKN) {
         this.id = id;

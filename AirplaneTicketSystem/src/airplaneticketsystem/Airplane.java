@@ -13,9 +13,9 @@ package airplaneticketsystem;
  */
 public class Airplane  {
 
-    int airplaneId;
-    int passengerCapacity;
-    String airplaneModel;
+    private final int airplaneId;
+    private final int passengerCapacity;
+    private final String airplaneModel;
 
     public Airplane(int airplaneId, int passengerCapacity, String airplaneModel) {
         this.airplaneId = airplaneId;
