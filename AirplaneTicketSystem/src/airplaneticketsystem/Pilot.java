@@ -11,7 +11,7 @@ package airplaneticketsystem;
  */
 public class Pilot extends Employee{
 
-    private final int licanceId;
+    int licanceId;
 
     public Pilot(int employeeId, int id, String name, String surname, int TCKN) {
         super(employeeId, id, name, surname, TCKN);
