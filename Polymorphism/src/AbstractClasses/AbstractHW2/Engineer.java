@@ -3,16 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AbsractClass;
+package AbstractClasses.AbstractHW2;
 
 /**
  *
  * @author merttan
  */
- abstract class Window {
-
-    public abstract void toFront();
-
-    public abstract void toBack();
-
+public class Engineer {
+    
 }

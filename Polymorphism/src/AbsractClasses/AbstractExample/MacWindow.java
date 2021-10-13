@@ -3,22 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AbsractClass;
+package AbsractClasses.AbstractExample;
 
 /**
  *
  * @author merttan
  */
-public class x11Window extends Window {
+public class MacWindow extends Window {
 
     @Override
     public void toFront() {
-        System.out.println("x11window front");
+        System.out.println("Mac window front");
     }
 
     @Override
     public void toBack() {
-        System.out.println("x11window back");
+        System.out.println("Mac window back");
     }
 
 }
