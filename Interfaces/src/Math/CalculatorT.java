@@ -19,7 +19,9 @@ public class CalculatorT implements Calculator {
 
     SinFunction sf = new SinFunction();
     CosFunction cf = new CosFunction();
-    SquaringFunction sq= new SquaringFunction();
+    SquaringFunction sq = new SquaringFunction();
+    TanFunction tf = new TanFunction();
+    LogFunction lf = new LogFunction();
 
     public CalculatorT(int functionCount) {
         this.functionCount = functionCount;
@@ -52,6 +54,12 @@ public class CalculatorT implements Calculator {
 
         } else if (s.equals("Cos")) {
             result = cf.calculate(ert);
+            System.out.println(result);
+        } else if (s.equals("Tan")) {
+            result = tf.calculate(ert);
+            System.out.println(result);
+        } else if (s.equals("Log")) {
+            result = lf.calculate(ert);
             System.out.println(result);
         } else {
             result = sq.calculate(ert);

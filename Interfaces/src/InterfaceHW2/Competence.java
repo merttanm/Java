@@ -3,12 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AbstractClasses.AbstractHW2;
+package InterfaceHW2;
 
 /**
  *
  * @author merttan
  */
-public class Engineer {
-    
+public interface Competence {
+
+    public void blogger();
+
+    public void parent();
+
+    public void teamFun();
+
+    public void ınstrumentPlayer();
+
+    public void javaEnthusian();
+
 }

@@ -3,10 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package AbstractClasses.AbstractHW2;
-
-import FactoryExamplePolymorphism.*;
-
+package InterfaceHW2;
 /**
  *
  * @author merttan
