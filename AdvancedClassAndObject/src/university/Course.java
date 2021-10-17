@@ -11,11 +11,16 @@ package university;
  */
 public class Course {
 
-    String courseId;
+    int courseId;
     String courseName;
     Department department;
     Professor teacher;
     Student[] students;
+
+    public Course(int courseId, String courseName) {
+        this.courseId = courseId;
+        this.courseName = courseName;
+    }
 
     /* public static String getInfo(){
     

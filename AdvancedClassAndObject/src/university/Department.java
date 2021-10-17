@@ -17,6 +17,12 @@ public class Department {
     Course[] courses;
     Student[] students;
 
+    public Department(String departmentName, int departmentNumber) {
+        this.departmentName = departmentName;
+        this.departmentNumber = departmentNumber;
+    }
+
+
 
  
 

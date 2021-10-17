@@ -13,17 +13,13 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Course courseC = new Course();
-        courseC.courseName = "Fizik";
+        Course courseC = new Course(1, "Fizik");
 
-        Department departmentD = new Department();
-        departmentD.departmentName = "Mühendislik";
+        Department departmentD = new Department("Eğitim Fakültesi", 101);
 
-        Student studentS = new Student();
-        studentS.name = "mert";
+        Student studentS = new Student(123123123, "Helin");
 
-        Professor professorP = new Professor();
-        professorP.name = "Numan";
+        Professor professorP = new Professor(99,"Reha","Demir");
 
         departmentD.head = professorP;
         departmentD.courses = new Course[100];
@@ -34,17 +30,15 @@ public class Test {
         professorP.advisee[0] = studentS;
 
         courseC.department = departmentD;
-        courseC.department = new Department();
         courseC.department = departmentD;
 
         courseC.teacher = professorP;
-        courseC.teacher = new Professor();
         courseC.teacher = professorP;
 
         System.out.println("Departmantdaki kurslar: " + departmentD.courses[0].courseName);
-        System.out.println("Öğretim görevlilerine bağlı öğrenciler: " + professorP.advisee[0].name);
+        System.out.println("Öğretim görevlilerine bağlı öğrenciler: " + professorP.advisee[0].studentName);
         System.out.println("Kursların departmanları: " + courseC.department.departmentName);
-        System.out.println("Kursu veren profesör hoca: " + courseC.teacher.name);
+        System.out.println("Kursu veren profesör hoca: " + courseC.teacher.professorName);
 
     }
 

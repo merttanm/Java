@@ -17,5 +17,12 @@ public class Professor {
     Department department;
     Student[] advisee;
     Course[] coursesGiven;
-    String name;
+
+    public Professor(int professorNumber, String professorName, String professorSurname) {
+        this.professorNumber = professorNumber;
+        this.professorName = professorName;
+        this.professorSurname = professorSurname;
+    }
+    
+    
 }
