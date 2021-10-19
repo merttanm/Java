@@ -5,7 +5,6 @@
  */
 package AbstractClasses.AbstractHW;
 
-
 import java.util.Date;
 
 /**
@@ -13,12 +12,12 @@ import java.util.Date;
  * @author merttan
  */
 public class MasterStudent extends GraduateStudent {
-    
+
     private boolean studentIsGraduate;
-    
-    public MasterStudent(String advisir, String thesis, int no, String name, String year, String date, String major,boolean studentIsGraduate) {
+
+    public MasterStudent(String advisir, String thesis, int no, String name, String year, String date, String major, boolean studentIsGraduate) {
         super(advisir, thesis, no, name, year, date, major);
-    
+
     }
 
     @Override
@@ -33,15 +32,15 @@ public class MasterStudent extends GraduateStudent {
 
     @Override
     public void register() {
-     //   super.register(); //To change body of generated methods, choose Tools | Templates.
-      System.out.println("Öğrenci yeterlilik durumu: "+ studentIsGraduate);
-        
-        if(studentIsGraduate ==true){
-        
+        //   super.register(); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Öğrenci yeterlilik durumu: " + studentIsGraduate);
+
+        if (studentIsGraduate == true) {
+
             System.out.println("Öğrenci mezun olmuştur yüksek lisans hakkı vardır");
-        }
-        else
+        } else {
             System.err.println("Öğrenci mezun olamamıştır yüksek lisans hakkı yoktur");
+        }
     }
 
     @Override
@@ -53,7 +52,5 @@ public class MasterStudent extends GraduateStudent {
     public String toString() {
         return super.toString(); //To change body of generated methods, choose Tools | Templates.
     }
-    
-    
-    
+
 }

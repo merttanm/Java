@@ -5,7 +5,6 @@
  */
 package AbstractClasses.AbstractHW;
 
-
 import java.util.Date;
 
 /**
@@ -26,8 +25,8 @@ abstract class Student {
         this.year = year;
         this.date = date;
         this.major = major;
-       // register();
-      
+        // register();
+
     }
 
     public abstract void study();
@@ -38,14 +37,14 @@ abstract class Student {
     public String toString() {
         return super.toString(); //To change body of generated methods, choose Tools | Templates.
     }
-    
-    public String getInfo(){
-    
-        return "Öğrenci no:" + no+ "\nÖğrenci adı:" + name+
-        "\nÖğrencilik yıl:" + year+
-        "\nÖğrenci kayıt tarihi:" + date+
-        "\nÖğrenci eğitimi:" + major;
-        
+
+    public String getInfo() {
+
+        return "Öğrenci no:" + no + "\nÖğrenci adı:" + name
+                + "\nÖğrencilik yıl:" + year
+                + "\nÖğrenci kayıt tarihi:" + date
+                + "\nÖğrenci eğitimi:" + major;
+
     }
 
 }

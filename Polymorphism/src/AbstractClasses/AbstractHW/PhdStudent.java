@@ -24,8 +24,8 @@ public class PhdStudent extends GraduateStudent {
 
     @Override
     public void meetWhithAdvisor() {
-      //  super.meetWhithAdvisor(); //To change body of generated methods, choose Tools | Templates.
-       System.out.println("Öğrenciye dersi veren kişi: " + advisir);
+        //  super.meetWhithAdvisor(); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Öğrenciye dersi veren kişi: " + advisir);
     }
 
     @Override
@@ -46,7 +46,7 @@ public class PhdStudent extends GraduateStudent {
             System.err.println("NOT: Öğnreci doktora yapma onayı alamaz.");
         }
         writeTheSis();
-meetWhithAdvisor();
+        meetWhithAdvisor();
     }
 
     @Override

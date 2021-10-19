@@ -5,8 +5,6 @@
  */
 package AbstractClasses.AbstractHW;
 
-
-
 /**
  *
  * @author merttan
@@ -35,14 +33,15 @@ public class Test {
         System.out.println("-------------------------------");
 
         MasterStudent masterStudent1 = new MasterStudent("Dr. Şinasi", "Java", 4, "Mobil app", "Mehmet", "2020", "Edebiyat Fakültesi", false);
-    //    masterStudent1.register();
+        //    masterStudent1.register();
+
         s1.registerStudent(masterStudent1);
         System.out.println("-------------------------------");
 
         PhdStudent phdStudent1 = new PhdStudent(true, "Prof. Dr. Şenol", "Heykel bölümü", 5, "Dursun", "2021", "2020", "Güzel Sanatlar  Fakültesi");
-  //      phdStudent1.register();
-       s1.registerStudent(phdStudent1);
-        
+        //      phdStudent1.register();
+        s1.registerStudent(phdStudent1);
+
     }
 
 }
