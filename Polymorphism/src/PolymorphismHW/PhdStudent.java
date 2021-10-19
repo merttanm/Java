@@ -13,7 +13,7 @@ import java.util.Date;
  */
 public class PhdStudent extends GraduateStudent {
 
-    boolean qulityingExamToken;
+    private boolean qulityingExamToken;
 
     public PhdStudent(boolean qulityingExamToken, String advisir, String thesis, int no, String name, String year, String date, String major) {
         super(advisir, thesis, no, name, year, date, major);

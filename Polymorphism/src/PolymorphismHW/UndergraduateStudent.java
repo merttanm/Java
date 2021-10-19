@@ -13,7 +13,7 @@ import java.util.Date;
  */
 public class UndergraduateStudent extends Student {
 
-    String minor;
+    private final String minor;
 
     public UndergraduateStudent(String minor, int no, String name, String year, String date, String major) {
         super(no, name, year, date, major);

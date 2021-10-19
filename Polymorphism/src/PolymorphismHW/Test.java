@@ -28,26 +28,31 @@ public class Test {
             System.out.println("--------------- Student Status Graduate ----------------");
             s1.registerStudent(graduateStudent1);
         }
-        UndergraduateStudent udergraduateStudent1 = new UndergraduateStudent("Ali Nizam", 4, "Mobil app", "Mehmet", "2020", "4 Ocak 2001");   
-         if (graduateStudent1 instanceof Student) {
+        UndergraduateStudent udergraduateStudent1 = new UndergraduateStudent("Ali Nizam", 4, "Mobil app", "Mehmet", "2020", "4 Ocak 2001");
+        if (graduateStudent1 instanceof Student) {
             System.out.println("--------------- Student Status Undergraduate ----------------");
-             s1.registerStudent(udergraduateStudent1);
+            s1.registerStudent(udergraduateStudent1);
         }
-        
-        System.out.println("-------------------------------");
 
         PhdStudent phdStudent1 = new PhdStudent(true, "Prof. Dr. Şenol", "Heykel bölümü", 5, "Dursun", "2021", "2020", "Güzel Sanatlar  Fakültesi");
-   //     phdStudent1.register();
-        
-          if (phdStudent1 instanceof GraduateStudent) {
+        if (phdStudent1 instanceof GraduateStudent) {
             System.out.println("--------------- PHD Student Status Graduate ----------------");
             phdStudent1.register();
         }
-        
-        System.out.println("-------------------------------");
 
-        MasterStudent masterStudent1 = new MasterStudent("Dr. Şinasi", "Java", 4, "Mobil app", "Mehmet", "2020", "Edebiyat Fakültesi", false);
-        masterStudent1.register();
+        MasterStudent masterStudent1 = new MasterStudent("Dr. Şinasi", "Türk Edebiyatı", 6, "Turan", "2021", "2020", "Edebiyat Fakültesi", false);
+
+        if (masterStudent1 instanceof GraduateStudent) {
+            System.out.println("--------------- Master Student Status Graduate ----------------");
+            masterStudent1.register();
+        }
+
+        MasterStudent masterStudent2 = new MasterStudent("Dr. Ebubekir", "İngiliz Edebiyatı", 7, "Turan", "2021", "2020", "Edebiyat Fakültesi", true);
+
+        if (masterStudent2 instanceof GraduateStudent) {
+            System.out.println("--------------- Master Student Status Graduate ----------------");
+            masterStudent2.register();
+        }
 
     }
 

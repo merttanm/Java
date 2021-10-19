@@ -5,7 +5,6 @@
  */
 package InterfaceHW;
 
-
 import java.util.Date;
 
 /**
@@ -13,9 +12,12 @@ import java.util.Date;
  * @author merttan
  */
 public class MasterStudent extends GraduateStudent {
-    
-    public MasterStudent(String advisir, String thesis, int no, String name, String year, String date, String major) {
+
+    private boolean studentIsGraduate;
+
+    public MasterStudent(String advisir, String thesis, int no, String name, String year, String date, String major, Boolean studentIsGraduate) {
         super(advisir, thesis, no, name, year, date, major);
+        this.studentIsGraduate = studentIsGraduate;
     }
 
     @Override
@@ -42,7 +44,5 @@ public class MasterStudent extends GraduateStudent {
     public String toString() {
         return super.toString(); //To change body of generated methods, choose Tools | Templates.
     }
-    
-    
-    
+
 }

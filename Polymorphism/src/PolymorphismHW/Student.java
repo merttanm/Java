@@ -13,11 +13,11 @@ import java.util.Date;
  */
 public class Student {
 
-    int no;
-    String name;
-    String year;
-    String date;
-    String major;
+    private final int no;
+    private final String name;
+    private  final String year;
+    private final  String date;
+    private final String major;
 
     public Student(int no, String name, String year, String date, String major) {
         this.no = no;
@@ -35,7 +35,7 @@ public class Student {
     public void register() {
         System.out.println("Öğrenci no:" + no);
         System.out.println("Öğrenci adı:" + name);
-        System.out.println("Öğrenci yıl:" + year);
+        System.out.println("Öğrencilik yıl:" + year);
         System.out.println("Öğrenci kayıt tarihi:" + date);
         System.out.println("Öğrenci eğitimi:" + major);
 
