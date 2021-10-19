@@ -5,7 +5,6 @@
  */
 package AbstractClasses.AbstractHW;
 
-
 import java.util.Date;
 
 /**

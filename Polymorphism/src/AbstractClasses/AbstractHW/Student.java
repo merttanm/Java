@@ -42,7 +42,7 @@ abstract class Student {
     public String getInfo(){
     
         return "Öğrenci no:" + no+ "\nÖğrenci adı:" + name+
-        "\nÖğrenci yıl:" + year+
+        "\nÖğrencilik yıl:" + year+
         "\nÖğrenci kayıt tarihi:" + date+
         "\nÖğrenci eğitimi:" + major;
         

@@ -21,7 +21,7 @@ public class GraduateStudent extends Student {
         super(no, name, year, date, major);
         this.advisir = advisir;
         this.thesis = thesis;
-
+        register();
     }
 
     @Override
@@ -30,11 +30,11 @@ public class GraduateStudent extends Student {
 
     @Override
     public void register() {
-        System.out.println("Öğrenci no:" + no);
+      /*  System.out.println("Öğrenci no:" + no);
         System.out.println("Öğrenci adı:" + name);
         System.out.println("Öğrenci yıl:" + year);
         System.out.println("Öğrenci kayıt tarihi:" + date);
-        System.out.println("Öğrenci eğitimi:" + major);
+        System.out.println("Öğrenci eğitimi:" + major);*/
         writeTheSis();
         meetWhithAdvisor();
     }

@@ -14,8 +14,11 @@ import java.util.Date;
  */
 public class MasterStudent extends GraduateStudent {
     
-    public MasterStudent(String advisir, String thesis, int no, String name, String year, String date, String major) {
+    private boolean studentIsGraduate;
+    
+    public MasterStudent(String advisir, String thesis, int no, String name, String year, String date, String major,boolean studentIsGraduate) {
         super(advisir, thesis, no, name, year, date, major);
+    
     }
 
     @Override
@@ -30,7 +33,15 @@ public class MasterStudent extends GraduateStudent {
 
     @Override
     public void register() {
-        super.register(); //To change body of generated methods, choose Tools | Templates.
+     //   super.register(); //To change body of generated methods, choose Tools | Templates.
+      System.out.println("Öğrenci yeterlilik durumu: "+ studentIsGraduate);
+        
+        if(studentIsGraduate ==true){
+        
+            System.out.println("Öğrenci mezun olmuştur yüksek lisans hakkı vardır");
+        }
+        else
+            System.err.println("Öğrenci mezun olamamıştır yüksek lisans hakkı yoktur");
     }
 
     @Override

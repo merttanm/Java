@@ -7,6 +7,7 @@ package AbstractClasses.AbstractHW;
 
 
 import java.lang.reflect.Array;
+import java.util.ArrayList;
 
 /**
  *
@@ -23,17 +24,26 @@ public class RegistationStudent {
     }
     public void registerStudent(Student s) {
 
-        /*String[] register= new String[10];
+    //     String[] log= new String[10];
          
-         for (int i = 0; i < 10; i++) {
-             register[i]=s.getInfo();
+         ArrayList<String> log= new ArrayList<String>();
+         int count =0; 
+        // for (int i = 0; i <= count; i++) {
+             log.add(s.getInfo());
+             /*
+             log[count]=s.getInfo();
+             count++;
+             */
+        // }
+   
+         for(String i : log){
+             System.out.println(i);
          }
-         
-         System.out.println(register[5]);
-         */
+        // System.out.println(log[7]);
         
+        /*
         String register = s.getInfo();
-        System.out.println(register);
+        System.out.println(register);*/
 
     }
 
