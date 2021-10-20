@@ -24,6 +24,8 @@ public class Test {
         t.doCalcultor("Cos", 5.6);
         t.doCalcultor("Sin", 2.1);
         t.doCalcultor("Squaring", 2.3);
+        t.doCalcultor("Tan", 2.8);
+        t.doCalcultor("Log", 10.0);
 
     }
 

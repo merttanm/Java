@@ -21,7 +21,7 @@ public class LogFunction implements MathFunction {
     @Override
     public double calculate(double calculateFunction) {
 
-        return Math.log(calculateFunction);
+        return Math.log10(calculateFunction);
     }
 
 }

@@ -9,15 +9,16 @@ package InterfaceHW2;
  *
  * @author merttan
  */
-public class Engineer extends Employee implements Competence{
+public class CivilEngineer extends Employee implements Competence{
     
-    public Engineer(int no, int years, String name, String department) {
+    public CivilEngineer(int no, int years, String name, String department) {
         super(no, years, name, department);
+        blogger();
     }
 
     @Override
     public void blogger() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("Blogger");
     }
 
     @Override

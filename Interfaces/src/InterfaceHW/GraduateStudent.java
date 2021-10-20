@@ -14,8 +14,8 @@ import java.util.Date;
  */
 public class GraduateStudent extends AbstractStudent {
 
-    String advisir;
-    String thesis;
+    private String advisir;
+    private String thesis;
 
     public GraduateStudent(String advisir, String thesis, int no, String name, String year, String date, String major) {
         super(no, name, year, date, major);

@@ -1,0 +1,13 @@
+@startuml
+abstract class InterfaceHW3.LocationConnect
+abstract class InterfaceHW3.Product
+annotation java.lang.Override
+class InterfaceHW3.ClothProduct
+class InterfaceHW3.FoodProduct
+interface InterfaceHW3.Location
+InterfaceHW3.LocationConnect --|> InterfaceHW3.Product
+InterfaceHW3.LocationConnect ..> java.lang.Override
+InterfaceHW3.LocationConnect --|> InterfaceHW3.Location
+InterfaceHW3.ClothProduct --|> InterfaceHW3.LocationConnect
+InterfaceHW3.ClothProduct ..> java.lang.Override
+@enduml

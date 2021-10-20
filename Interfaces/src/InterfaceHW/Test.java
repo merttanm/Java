@@ -5,8 +5,6 @@
  */
 package InterfaceHW;
 
-
-
 /**
  *
  * @author merttan
@@ -15,8 +13,7 @@ public class Test {
 
     public static void main(String... args) {
 
-          RegistationStudent s1 = new RegistationStudent();
-
+        RegistationStudent s1 = new RegistationStudent();
 
         System.out.println("-------------------------------");
 
@@ -53,7 +50,7 @@ public class Test {
             System.out.println("--------------- Master Student Status Graduate ----------------");
             masterStudent2.register();
         }
-        
+
     }
 
 }
