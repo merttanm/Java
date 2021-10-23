@@ -11,7 +11,7 @@ package InterfaceHW2;
  */
 public interface Competence {
 
-    public void blogger();
+    public  void blogger();
 
     public void parent();
 
