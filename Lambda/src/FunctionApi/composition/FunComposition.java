@@ -14,7 +14,7 @@ import java.util.function.Function;
  */
 public class FunComposition {
 
-    public static void compose() {
+    public static void compose1() {
         Scanner scn = new Scanner(System.in);
         System.out.println("Lütfen bir rakam giriniz...");
         int i = scn.nextInt();
@@ -28,11 +28,19 @@ public class FunComposition {
         System.out.println(twiceNumber);
         
     }
+    
+    
+    public static void compose2(){
+        
+        Function <Double, Double> sinAsin=((Function<Double, Double>) Math::sin);
+    
+    
+    }
 
     public static void main(String... args) {
 
         
-        compose();
+        compose1();
     }
 
 }
