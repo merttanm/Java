@@ -12,7 +12,7 @@ import java.util.function.Function;
  *
  * @author merttan
  */
-public class FunComposition {
+public class FunctionComposition {
 
     public static void compose1() {
         Scanner scn = new Scanner(System.in);
