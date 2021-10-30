@@ -18,7 +18,7 @@ public class ArithmaticExceptionExample {
         }
         catch(ArithmeticException ea)
         {
-            System.out.println("ArithmeticException hatası: " +ea.getMessage());
+            System.out.println("ArithmeticException hatası: " +ea.fillInStackTrace());
         }
          catch(NullPointerException en)
         {
