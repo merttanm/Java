@@ -9,22 +9,24 @@ import greeting06.*;
 import greeting05.*;
 
 /**
- * dependecy manengment frameworkü haline geliyor
+ *
  * @author merttan
  */
 public class Application {
-    // 22:50 dakika
+    
 
     public static void main(String[] args) {
-        
+        //  Bu yapı dependecy management framework'ü haline geliyor
         ObjectProviderFremework framework=new ObjectProviderFremework();
-        Factory factory=GreetingFactory.getInstance();
+  
 
-        GreetingRenderer renderer = factory.getGreetingRenderer();
-        GreetingProvider provider = factory.getGreetingProvider();
-        renderer.setGreetingProvider(provider);
-        renderer.render();
+        GreetingRenderer renderer1 = (GreetingRenderer) framework.objectFramework("greeting07.StandartOutputRenderer", "greeting07.SelamGreetingProvider");
+        renderer1.render();
         
+        
+       
+        GreetingRenderer renderer2 = (GreetingRenderer) framework.objectFramework("greeting07.ErrorOutputRenderer","greeting06.HelloWordGreetingProvider");
+        renderer2.render();
 
         
         
