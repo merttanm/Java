@@ -9,8 +9,6 @@ package interfaces;
  *
  * @author merttan
  */
-public interface Comparable {
-    
-    void cmpa();
+public interface cmp1 {
     
 }

@@ -9,8 +9,11 @@ package interfaces;
  *
  * @author merttan
  */
-public interface Comparable {
-    
-    void cmpa();
+public interface cmp2 extends cmp1, Comparable{
+
+    @Override
+    public default void cmpa() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
