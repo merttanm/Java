@@ -10,7 +10,7 @@ package greeting08;
  *
  * @author merttan
  */
-public class StandartOutputRenderer implements GreetingRenderer {
+public class StandardOutputRenderer implements GreetingRenderer {
 
     GreetingProvider greetingProvider = null;
 

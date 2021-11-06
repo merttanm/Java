@@ -3,21 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package university;
+package FunctionApi.function;
 
 /**
  *
- * @author MERT
+ * @author merttan
  */
-public class Department {
-
-    String departmentName;
-    int departmentNumber;
-    Professor head;
-    Course[] courses;
-    Student[] students;
-
-
- 
-
+public class FunctionExample {
+    
 }

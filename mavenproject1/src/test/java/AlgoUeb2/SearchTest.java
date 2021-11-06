@@ -19,11 +19,11 @@ public class SearchTest {
 
     private Searchable<Student> searchObject = new Search<>();
 
-    private static final Student student1 = new Student("Mark", "Something", Course.B1, 7373);
-    private static final Student student2 = new Student("Carl", "Something", Course.B2, 3737);
-    private static final Student student3 = new Student("Huseyin", "SomethingNew", Course.B3, 2937);
-    private static final Student student4 = new Student("Melisa", "Urgh", Course.B2, 2873);
-    private static final Student student5 = new Student("Huseyin", "E", Course.B5, 7373);
+    private static final Student student1 = new Student("Mark", "Something", CourseUniversity.B1, 7373);
+    private static final Student student2 = new Student("Carl", "Something", CourseUniversity.B2, 3737);
+    private static final Student student3 = new Student("Huseyin", "SomethingNew", CourseUniversity.B3, 2937);
+    private static final Student student4 = new Student("Melisa", "Urgh", CourseUniversity.B2, 2873);
+    private static final Student student5 = new Student("Huseyin", "E", CourseUniversity.B5, 7373);
 
 
     private Listable<Student> makeSinglyList() {

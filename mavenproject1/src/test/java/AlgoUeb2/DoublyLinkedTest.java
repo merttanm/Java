@@ -12,10 +12,10 @@ import org.junit.Test;
 
 public class DoublyLinkedTest {
 
-    private static final Student student1 = new Student("Mark", "Something", Course.B1, 7373);
-    private static final Student student2 = new Student("Carl", "SomethingElse", Course.B2, 3737);
-    private static final Student student3 = new Student("Huseyin", "SomethingNew", Course.B3, 2937);
-    private static final Student student4 = new Student("Melisa", "Urgh", Course.B4, 2873);
+    private static final Student student1 = new Student("Mark", "Something", CourseUniversity.B1, 7373);
+    private static final Student student2 = new Student("Carl", "SomethingElse", CourseUniversity.B2, 3737);
+    private static final Student student3 = new Student("Huseyin", "SomethingNew", CourseUniversity.B3, 2937);
+    private static final Student student4 = new Student("Melisa", "Urgh", CourseUniversity.B4, 2873);
 
     private Listable<Student> makeSinglyList() {
         Listable<Student> list = new SinglyLinkedList<>();

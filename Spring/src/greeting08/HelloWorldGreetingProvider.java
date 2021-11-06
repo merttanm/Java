@@ -13,7 +13,7 @@ import greeting05.*;
  *
  * @author merttan
  */
-public class HelloWordGreetingProvider implements GreetingProvider{
+public class HelloWorldGreetingProvider implements GreetingProvider{
 
 
     public String getGreeting() {

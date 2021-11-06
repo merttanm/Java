@@ -13,36 +13,36 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Course courseC = new Course();
+        CourseUniversity courseC = new CourseUniversity();
         courseC.courseName = "Fizik";
 
-        Department departmentD = new Department();
+        DepartmentUniversity departmentD = new DepartmentUniversity();
         departmentD.departmentName = "Mühendislik";
 
-        Student studentS = new Student();
+        StudentUniversity studentS = new StudentUniversity();
         studentS.name = "mert";
 
-        Professor professorP = new Professor();
+        ProfessorUniversity professorP = new ProfessorUniversity();
         professorP.name = "Numan";
 
         departmentD.head = professorP;
-        departmentD.courses = new Course[100];
+        departmentD.courses = new CourseUniversity[100];
         departmentD.courses[0] = courseC;
 
         professorP.department = departmentD;
-        professorP.advisee = new Student[100];
+        professorP.advisee = new StudentUniversity[100];
         professorP.advisee[0] = studentS;
 
         courseC.department = departmentD;
-        courseC.department = new Department();
+        courseC.department = new DepartmentUniversity();
         courseC.department = departmentD;
 
         courseC.teacher = professorP;
-        courseC.teacher = new Professor();
+        courseC.teacher = new ProfessorUniversity();
         courseC.teacher = professorP;
 
         System.out.println("Departmantdaki kurslar: " + departmentD.courses[0].courseName);
-        System.out.println("Öğretim görevlilerine bağlı öğrenciler: " + professorP.advisee[0].name);
+        System.out.println("Öğretim görevlilerine bağlı öğrenciler: " + professorP.advisee[0].studentName);
         System.out.println("Kursların departmanları: " + courseC.department.departmentName);
         System.out.println("Kursu veren profesör hoca: " + courseC.teacher.name);
 

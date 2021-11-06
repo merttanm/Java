@@ -13,8 +13,8 @@ public class Course {
 
     int courseId;
     String courseName;
-    Department department;
-    Professor teacher;
+    DepartmentUniversity department;
+    ProfessorUniversity teacher;
     Student[] students;
 
     public Course(int courseId, String courseName) {

@@ -10,6 +10,11 @@ package greeting08;
  * @author merttan
  */
 
+import org.springframework.beans.*;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+
 public class MainApplication {
 
 	public static void main(String[] args) {
@@ -19,8 +24,7 @@ public class MainApplication {
 		GreetingRenderer renderer = (GreetingRenderer) factory.getBean("renderer");
 		renderer.render();
 
-		GreetingProvider provider = (GreetingProvider) factory.getBean("provider");
-		System.out.println(provider.getGreeting());
+	
 
 	}
 

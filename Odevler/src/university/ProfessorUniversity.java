@@ -9,12 +9,12 @@ package university;
  *
  * @author MERT
  */
-public class Professor {
+public class ProfessorUniversity {
 
     int professorNumber;
     String professorName;
     String professorSurname;
-    Department department;
+    DepartmentUniversity department;
     Student[] advisee;
     Course[] coursesGiven;
     String name;

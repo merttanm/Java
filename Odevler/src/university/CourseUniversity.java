@@ -9,13 +9,13 @@ package university;
  *
  * @author MERT
  */
-public class Course {
+public class CourseUniversity {
 
     String courseId;
     String courseName;
-    Department department;
-    Professor teacher;
-    Student[] students;
+    DepartmentUniversity department;
+    ProfessorUniversity teacher;
+    StudentUniversity[] students;
 
     /* public static String getInfo(){
     

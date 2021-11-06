@@ -5,8 +5,7 @@
  */
 package greeting07;
 
-import greeting06.*;
-import greeting05.*;
+
 
 /**
  *

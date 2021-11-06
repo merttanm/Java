@@ -9,19 +9,13 @@ package university;
  *
  * @author MERT
  */
-public class Department {
+public class DepartmentUniversity {
 
     String departmentName;
     int departmentNumber;
     ProfessorUniversity head;
-    CourseUniversity[] courses;
+    Course[] courses;
     Student[] students;
-
-    public Department(String departmentName, int departmentNumber) {
-        this.departmentName = departmentName;
-        this.departmentNumber = departmentNumber;
-    }
-
 
 
  

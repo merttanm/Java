@@ -14,9 +14,9 @@ public class Student {
     int studentNumber;
     String studentName;
     String surnameName;
-    Department department;
-    Professor advisor;
-    Course[] coursesTaken;
+    DepartmentUniversity department;
+    ProfessorUniversity advisor;
+    CourseUniversity[] coursesTaken;
 
 
     public Student(int studentNumber, String studentName) {

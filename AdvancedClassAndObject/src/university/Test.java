@@ -13,16 +13,16 @@ public class Test {
 
     public static void main(String[] args) {
 
-        Course courseC = new Course(1, "Fizik");
+        CourseUniversity courseC = new CourseUniversity(1, "Fizik");
 
-        Department departmentD = new Department("Eğitim Fakültesi", 101);
+        DepartmentUniversity departmentD = new DepartmentUniversity("Eğitim Fakültesi", 101);
 
         Student studentS = new Student(123123123, "Helin");
 
-        Professor professorP = new Professor(99,"Reha","Demir");
+        ProfessorUniversity professorP = new ProfessorUniversity(99,"Reha","Demir");
 
         departmentD.head = professorP;
-        departmentD.courses = new Course[100];
+        departmentD.courses = new CourseUniversity[100];
         departmentD.courses[0] = courseC;
 
         professorP.department = departmentD;
