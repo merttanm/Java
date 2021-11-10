@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package DependencyInjection.greeting08;
+package InversionOfControl.greeting08;
 
 /**
  *
@@ -11,24 +11,24 @@ package DependencyInjection.greeting08;
  */
 import org.springframework.beans.*;
 import org.springframework.beans.factory.BeanFactory;
+import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public class MainApplication {
 
     public static void main(String[] args) {
 
-        BeanFactory factory = new ClassPathXmlApplicationContext("DependencyInjection/greeting08/resources/beans.xml");
 
+        ApplicationContext context = new ClassPathXmlApplicationContext("InversionOfControl/greeting08/resources/beans.xml");
         // Render veya provider da etsem mesajı alıyor
-        GreetingRenderer renderer = (GreetingRenderer) factory.getBean("renderer"); // output HelloWord
+        GreetingRenderer renderer = (GreetingRenderer) context.getBean("renderer"); // output HelloWord
         renderer.render();
 
         
-        GreetingProvider provider = (GreetingProvider) factory.getBean("provider"); // output HelloWord 
+        GreetingProvider provider = (GreetingProvider) context.getBean("provider"); // output HelloWord 
         System.out.println(provider.getGreeting());
 
-        // provider2 nin dosya yolu class="DependencyInjection.greeting08.SelamGreetingProvider"
-        GreetingProvider provider2 = (GreetingProvider) factory.getBean("provider2"); // output Selam 
+        GreetingProvider provider2 = (GreetingProvider) context.getBean("provider2"); // output Selam 
         System.out.println(provider2.getGreeting());
 
     }
