@@ -12,36 +12,32 @@ import java.util.Scanner;
  * @author merttan
  */
 public class test4 {
-    
-    
-  public static String StringChallenge(String str) {
-    // code goes here  
-  char [] charArray = str.toCharArray();
 
-  for(int i=0; i<charArray.length; i++){
+    public static String StringChallenge(String str) {
+        // code goes here  
+        char[] charArray = str.toCharArray();
 
-    for(int j=i+1; j<charArray.length; j++){
+        for (int i = 0; i < charArray.length; i++) {
 
-      if(Character.toLowerCase(charArray[j])< Character.toLowerCase(charArray[i])){
-        
-      char temp= charArray[i];
-      charArray[i] = charArray[j];
-      charArray[j] = temp;
+            for (int j = i + 1; j < charArray.length; j++) {
 
-      }
-    
-  }
-  }
-    return String.valueOf(charArray);
-  }
+                if (Character.toLowerCase(charArray[j]) < Character.toLowerCase(charArray[i])) {
 
+                    char temp = charArray[i];
+                    charArray[i] = charArray[j];
+                    charArray[j] = temp;
 
-  public static void main (String[] args) {  
-    // keep this function call here     
-    Scanner s = new Scanner(System.in);
-    System.out.print(StringChallenge(s.nextLine())); 
-  }
+                }
+
+            }
+        }
+        return String.valueOf(charArray);
+    }
+
+    public static void main(String[] args) {
+        // keep this function call here     
+        Scanner s = new Scanner(System.in);
+        System.out.print(StringChallenge(s.nextLine()));
+    }
 
 }
-    
-

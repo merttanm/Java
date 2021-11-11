@@ -6,55 +6,36 @@
 package HackerRank;
 
 import java.io.*;
-import java.math.*;
-import java.security.*;
-import java.text.*;
 import java.util.*;
-import java.util.concurrent.*;
-import java.util.function.*;
+import java.text.*;
+import java.math.*;
 import java.util.regex.*;
-import java.util.stream.*;
-import static java.util.stream.Collectors.joining;
-import static java.util.stream.Collectors.toList;
-
-/**
- *
- * @author merttan
- */
-class Result {
-
-    /*
-     * Complete the 'birthdayCakeCandles' function below.
-     *
-     * The function is expected to return an INTEGER.
-     * The function accepts INTEGER_ARRAY candles as parameter.
-     */
-
-    public static int birthdayCakeCandles(List<Integer> candles) {
-    // Write your code here
-        
-    return 6;
-    }
-
-}
 
 public class Case16 {
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
 
-        int candlesCount = Integer.parseInt(bufferedReader.readLine().trim());
+    public static void main(String[] args) {
+        int i = 4;
+        double d = 4.0;
+        String s = "HackerRank ";
 
-        List<Integer> candles = Stream.of(bufferedReader.readLine().replaceAll("\\s+$", "").split(" "))
-            .map(Integer::parseInt)
-            .collect(toList());
+        Scanner scan = new Scanner(System.in);
 
-        int result = Result.birthdayCakeCandles(candles);
+        /* Declare second integer, double, and String variables. */
+        int ii = scan.nextInt();
+        double dd = scan.nextDouble();
+        scan.nextLine();
+        String textInput = scan.nextLine();
 
-        bufferedWriter.write(String.valueOf(result));
-        bufferedWriter.newLine();
+        /* Read and save an integer, double, and String to your variables.*/
+        // Note: If you have trouble reading the entire String, please go back and review the Tutorial closely.
+        System.out.println((int) (ii + i));
+        /* Print the sum of both integer variables on a new line. */
+        System.out.println((double)(d + dd));
+        /* Print the sum of the double variables on a new line. */
+        System.out.println(s + textInput);
+        /* Concatenate and print the String variables on a new line; 
+        	the 's' variable above should be printed first. */
 
-        bufferedReader.close();
-        bufferedWriter.close();
+        scan.close();
     }
 }
