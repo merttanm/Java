@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author merttan
  */
-public class Case9 {
+public class Case09 {
 
     private static int a;
     private static int b;

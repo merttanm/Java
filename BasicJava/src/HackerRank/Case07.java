@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
  *
  * @author merttan
  */
-public class Case7 {
+public class Case07 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);

@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author MERT
  */
-public class Case3 {
+public class Case03 {
 
     /*
     Input Format

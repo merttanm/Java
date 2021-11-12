@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author MERT
  */
-public class Case5 {
+public class Case05 {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

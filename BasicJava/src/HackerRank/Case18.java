@@ -21,7 +21,29 @@ import java.util.stream.*;
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.Collectors.toList;
 
-class Result {
+
+
+public class Case18 {
+
+    public static void main(String[] args) throws IOException {
+        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
+
+        String encryptedMessage = bufferedReader.readLine();
+
+        String result = ResultCase18.decryptMessage(encryptedMessage);
+
+        bufferedWriter.write(result);
+        bufferedWriter.newLine();
+
+        bufferedReader.close();
+        bufferedWriter.close();
+    }
+}
+
+
+
+class ResultCase18 {
 
     /*
      * Complete the 'decryptMessage' function below.
@@ -44,22 +66,4 @@ class Result {
         return String.valueOf(charArray);
     }
 
-}
-
-public class Case18 {
-
-    public static void main(String[] args) throws IOException {
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.getenv("OUTPUT_PATH")));
-
-        String encryptedMessage = bufferedReader.readLine();
-
-        String result = Result.decryptMessage(encryptedMessage);
-
-        bufferedWriter.write(result);
-        bufferedWriter.newLine();
-
-        bufferedReader.close();
-        bufferedWriter.close();
-    }
 }

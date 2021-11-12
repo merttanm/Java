@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author MERT
  */
-public class Case2 {
+public class Case02 {
 
     /*
 Explanation

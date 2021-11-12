@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author merttan
  */
-public class Case6 {
+public class Case06 {
     
     public static void main(String[] args) {
         

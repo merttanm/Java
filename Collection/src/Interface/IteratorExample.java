@@ -28,20 +28,20 @@ public class IteratorExample {
         System.out.println("Collection: " + collec);
 
         System.out.println("----------");
-        collec.add("dört");
 
         Iterator iterator = collec.iterator();
-        collec.add("dört");
+        collec.add("dört"); /// Iterator nesnesi ile hasNext arasında, listeye yeni bir ekleme yapılırsa Hata verir !!!
 
         while (iterator.hasNext()) {
             Object obj = iterator.next();
             String str = (String) obj;
             System.out.println("Collection: " + str);
-            if (str.startsWith("d")) {
+            if (str.startsWith("o")) {
                 iterator.remove();
             }
 
         }
+        
         System.out.println("----------");
         collec.add("altmış beş");
         iterator = collec.iterator();
