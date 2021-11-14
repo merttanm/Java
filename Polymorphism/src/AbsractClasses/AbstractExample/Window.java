@@ -9,10 +9,12 @@ package AbsractClasses.AbstractExample;
  *
  * @author merttan
  */
- abstract class Window {
+abstract class Window {
 
     public abstract void toFront();
 
     public abstract void toBack();
+
+    public static void teststatic() {}
 
 }

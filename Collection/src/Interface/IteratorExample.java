@@ -30,7 +30,7 @@ public class IteratorExample {
         System.out.println("----------");
 
         Iterator iterator = collec.iterator();
-        collec.add("dört"); /// Iterator nesnesi ile hasNext arasında, listeye yeni bir ekleme yapılırsa Hata verir !!!
+        //collec.add("dört"); /// Iterator nesnesi ile hasNext arasında, listeye yeni bir ekleme yapılırsa Hata verir !!!
 
         while (iterator.hasNext()) {
             Object obj = iterator.next();

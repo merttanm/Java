@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Other;
+package FunctionApi.Other;
 
 import java.util.function.BiFunction;
 

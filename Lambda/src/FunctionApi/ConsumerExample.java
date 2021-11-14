@@ -25,5 +25,14 @@ public class ConsumerExample {
         BiConsumer<String, String> concat = (s1, s2) -> System.out.println(s1 + s2);;
         concat.accept("Names", "Statüss");
 
+        Consumer<String> consumer = new Consumer<String>() {
+            @Override
+            public void accept(String msg) {
+                System.out.println(msg);
+            }
+        };
+
+        consumer.accept("Merhaba Dünya");
+
     }
 }

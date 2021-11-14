@@ -26,6 +26,7 @@ public class TextEditor {
         x11Window x11 = new x11Window();
         x11.toBack();
         x11.toFront();
+       
 
     }
 
