@@ -3,20 +3,25 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+
 package Eval;
 
 import java.util.function.IntConsumer;
-
+import java.lang.*;
+import java.lang.Object;
 /**
  *
  * @author merttan
  */
 public class RepeatDemo {
+    
+    int bird=4;
 
     public static void main(String... args) {
         repeat(10, () -> System.out.println("Selam App"));
         repeat(10, i -> System.out.println("Count Down" + (9 - i)));
         repeatMessage("Selam App", 10);
+ 
     }
 
     public static void repeat(int n, Runnable action) {
@@ -46,3 +51,5 @@ public class RepeatDemo {
     }
 
 }
+
+

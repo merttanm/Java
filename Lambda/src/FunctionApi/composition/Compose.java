@@ -13,7 +13,7 @@ public class Compose {
 
     //Kendisine verilen parametre ile belirtilen işlemi yapan ve işlemin sonunda belirtilen tipde değer döner
     public interface Fun<A, B> {
-
+       
         B call(A x);
     }
 
@@ -55,7 +55,11 @@ public class Compose {
 
         System.out.println(cosAsin1.call(0.55));
         System.out.println(sinAsin2.call(0.57));
+        System.out.println(Math.floor(5));
 
     }
+    
+    
+    
 
 }
